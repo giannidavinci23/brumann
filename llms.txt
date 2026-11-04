@@ -14,10 +14,10 @@
 
 ## Produits
 
-- [Servante Max Édition](https://giannidavinci23.github.io/brumann/#max-edition) (BRU-SER-8T) : 899 € TTC. Servante d’atelier 8 tiroirs, 276 outils en chrome vanadium, deux clés dynamométriques (5 à 210 N·m), verrouillage centralisé. Finitions gris Nardo, noir et rouge, ou noir. 84 × 98 × 46 cm, 85 kg.
-- [Mallette de dépannage](https://giannidavinci23.github.io/brumann/#intervention) (BRU-MDP, GTIN 3770044883002) : 199 € TTC. Trolley léger sur roues, 110 outils et plus de 300 accessoires. 28 × 51 × 26 cm, 13 kg.
-- [Minibox 3 tiroirs](https://giannidavinci23.github.io/brumann/#intervention) (BRU-MBX, GTIN 3770044883019) : 350 € TTC. Caisse métallique 3 tiroirs, 83 outils, verrouillage centralisé, tiroirs auto-bloquants. 36 × 56 × 32 cm, 22 kg.
-- [Mobilier d’atelier](https://giannidavinci23.github.io/brumann/#atelier) : compositions de 1 250 à 1 550 € TTC, livrées sans outils.
+- [Servante Max Édition](https://giannidavinci23.github.io/brumann/servante-max-edition.html) (BRU-SER-8T) : 899 € TTC. Servante d’atelier 8 tiroirs, 276 outils en chrome vanadium, deux clés dynamométriques (5 à 210 N·m), verrouillage centralisé. Finitions gris Nardo, noir et rouge, ou noir. 84 × 98 × 46 cm, 85 kg.
+- [Mallette de dépannage](https://giannidavinci23.github.io/brumann/mallette-de-depannage.html) (BRU-MDP, GTIN 3770044883002) : 199 € TTC. Trolley léger sur roues, 110 outils et plus de 300 accessoires. 28 × 51 × 26 cm, 13 kg.
+- [Minibox 3 tiroirs](https://giannidavinci23.github.io/brumann/minibox-3-tiroirs.html) (BRU-MBX, GTIN 3770044883019) : 350 € TTC. Caisse métallique 3 tiroirs, 83 outils, verrouillage centralisé, tiroirs auto-bloquants. 36 × 56 × 32 cm, 22 kg.
+- [Mobilier d’atelier](https://giannidavinci23.github.io/brumann/mobilier-atelier.html) : compositions de 1 250 à 1 550 € TTC, livrées sans outils.
 - [Personnalisation](https://giannidavinci23.github.io/brumann/#sur-mesure) : jeux de clés, trousses, boîtes à outils et modules de tiroirs aux couleurs d’un distributeur, sur étude.
 
 ## Questions fréquentes
