@@ -1,2 +1,3 @@
+# Démonstration client : rien n'est indexé tant que le site n'est pas sur son domaine.
 User-agent: *
 Disallow: /
