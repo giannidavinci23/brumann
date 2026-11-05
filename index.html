@@ -537,6 +537,52 @@ dialog.legal::backdrop{background:rgba(4,9,14,.72);-webkit-backdrop-filter:blur(
   html{scroll-behavior:auto}
   *,*::before,*::after{animation-duration:.001ms!important;animation-delay:0s!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
 }
+/* Variante claire : fond clair, héros / interlude / distribution / pied de page restent sombres pour garder l'ambiance hangar. */
+:root{
+  --night:#F3F5F7; --night-2:#E8ECF0; --night-3:#DDE3E9;
+  --cabin:#FFFFFF; --cabin-2:#FFFFFF;
+  --runway:#0B1520; --alu:#2F3E4E; --alu-dim:#55657A; --nardo:#80868B;
+  --line:rgba(11,21,32,.14); --line-2:rgba(11,21,32,.3);
+  --grid:rgba(11,21,32,.06); --grid-2:rgba(11,21,32,.03);
+  --ink-2:#4A5A6A; color-scheme:light;
+}
+/* Zones qui gardent le thème sombre d'origine */
+.hdr,.hero,.interlude,.sec-dist,.ftr,.menu,.legal{
+  --night:#0B1520; --night-2:#0E1B29; --night-3:#08111A; --cabin:#183049; --cabin-2:#112131;
+  --runway:#EEF2F5; --alu:#B9C0C8; --alu-dim:#9AA7B4;
+  --line:rgba(185,192,200,.16); --line-2:rgba(185,192,200,.32); --grid:rgba(185,192,200,.09); --grid-2:rgba(185,192,200,.04);
+  color:var(--runway);
+}
+.hdr,.hero,.interlude,.sec-dist,.ftr{color:#EEF2F5}
+.hdr .btn-primary,.hero .btn-primary,.sec-dist .btn-primary,.menu .btn-primary{background:#EEF2F5;color:#0B1520}
+body{background:var(--night);color:var(--runway)}
+.skip{background:#0B1520;color:#EEF2F5}
+/* Sections claires : cartes blanches, ombre douce */
+.rcard,.prod,.wrench,.compo,.plate{background:#fff;box-shadow:0 1px 0 rgba(11,21,32,.06),0 18px 40px -26px rgba(11,21,32,.3)}
+.rcard:hover{background:#F8FAFB}
+.rcard-vis,.prod-vis,.pp-vis{background:radial-gradient(ellipse 58% 55% at 50% 44%,rgba(255,255,255,.95),transparent 72%),linear-gradient(180deg,#E3E9EE,#D3DBE3)}
+.panel-fig{background:#DDE3E9}
+.panel-tag{background:rgba(243,245,247,.92);color:#0B1520}
+.sec-light{background:#FFFFFF}
+.sec-max{background:radial-gradient(ellipse 50% 40% at 26% 30%,#FFFFFF,transparent 70%),var(--night)}
+.price,.price-lg{color:#0B1520}
+.btn-ghost{color:#0B1520;box-shadow:inset 0 0 0 1px rgba(11,21,32,.28)}
+.hdr .btn-ghost,.hero .btn-ghost,.sec-dist .btn-ghost{color:#EEF2F5;box-shadow:inset 0 0 0 1px rgba(185,192,200,.32)}
+.sec-light .btn-primary,.btn-primary{background:#0B1520;color:#EEF2F5}
+.btn-primary:hover{background:#1A2B3E}
+.sec-light .btn-primary{background:#0B1520}
+.finish-btn{color:#0B1520}
+.finish-btn[aria-pressed="true"]{box-shadow:inset 0 0 0 1px #0B1520}
+.torch::before{background:radial-gradient(300px circle at var(--mx,50%) var(--my,50%),rgba(255,255,255,.7),transparent 65%)}
+.sec-dist .torch::before,.hero .torch::before{background:radial-gradient(300px circle at var(--mx,50%) var(--my,50%),rgba(198,208,218,.13),transparent 65%)}
+/* La servante schématique reste sombre */
+.cab-wrap .drawer,.cab-top{--runway:#EEF2F5;--alu:#B9C0C8;--alu-dim:#9AA7B4;--line:rgba(185,192,200,.16)}
+.chip span,.field input,.field select,.field textarea{color:#0B1520}
+.sec-dist .field input,.sec-dist .field select,.sec-dist .field textarea,.sec-dist .chip span{color:#EEF2F5}
+.contact-card{background:#fff}
+.sec-dist .contact-card{background:#112131}
+.qa summary:hover{color:#000}
+.lang button[aria-pressed="true"]{background:#EEF2F5;color:#0B1520}
 </style>
 <link rel="canonical" href="https://giannidavinci23.github.io/brumann/">
 <link rel="alternate" hreflang="fr" href="https://giannidavinci23.github.io/brumann/">
