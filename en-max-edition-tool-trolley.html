@@ -595,6 +595,9 @@ dialog.legal::backdrop{background:rgba(4,9,14,.72);-webkit-backdrop-filter:blur(
 .pp-gal figure{margin:0;background:var(--cabin-2)}
 .pp-gal .gi{display:grid;place-items:center;aspect-ratio:4/3;background:#fff;overflow:hidden}
 .pp-gal img{display:block;width:100%;height:100%;object-fit:contain}
+.pp-gal.portrait{grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.pp-gal.portrait .gi{aspect-ratio:3/4}
+.pp-gal.portrait img{object-fit:cover}
 .pp-gal figcaption{padding:14px 16px 16px;font-size:14.5px;line-height:1.45;color:var(--alu)}
 .pp-compos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 .pp-compos figure{margin:0;background:var(--cabin-2)}
@@ -788,6 +791,32 @@ html body .dl-hq text{stroke:#EAF2F9}
      "@id": "https://giannidavinci23.github.io/brumann/#organisation"
     }
    },
+   "hasVariant": [
+    {
+     "@type": "Product",
+     "name": "Max Edition trolley · Nardo grey",
+     "sku": "BRU-SER-8T",
+     "gtin13": "3770044883033",
+     "color": "Nardo grey",
+     "image": "https://giannidavinci23.github.io/brumann/img/cart_nardo.webp"
+    },
+    {
+     "@type": "Product",
+     "name": "Max Edition trolley · Black and red",
+     "sku": "BRU-SER-8T",
+     "gtin13": "3770044883040",
+     "color": "Black and red",
+     "image": "https://giannidavinci23.github.io/brumann/img/cart_red.webp"
+    },
+    {
+     "@type": "Product",
+     "name": "Max Edition trolley · Black",
+     "sku": "BRU-SER-8T",
+     "gtin13": "3770044883026",
+     "color": "Black",
+     "image": "https://giannidavinci23.github.io/brumann/img/cart_black.webp"
+    }
+   ],
    "color": "Nardo grey, Black and red, Black",
    "additionalProperty": [
     {
@@ -936,14 +965,14 @@ html body .dl-hq text{stroke:#EAF2F9}
         <p class="eyebrow">Max Edition · 8T/7 Series</p>
         <h1 id="pp-title">Max Edition trolley</h1>
         <p class="lead">An aluminium top shelf, six fitted drawers out of eight, a side storage cabinet and two torque wrenches from 5 to 210 N·m: 276 chrome vanadium tools for your garage or workshop.</p>
-        <div class="finishes" role="group" aria-label="Finish"><span class="data">Finish</span><button class="finish-btn" type="button" data-finish="nardo" aria-pressed="true" style="--sw:#80868B"><i></i><span>Nardo grey</span></button><button class="finish-btn" type="button" data-finish="red" aria-pressed="false" style="--sw:linear-gradient(90deg,#141516 50%,#D3172B 50%)"><i></i><span>Black and red</span></button><button class="finish-btn" type="button" data-finish="black" aria-pressed="false" style="--sw:#141516"><i></i><span>Black</span></button></div>
+        <div class="finishes" role="group" aria-label="Finish"><span class="data">Finish</span><button class="finish-btn" type="button" data-finish="nardo" data-gtin="3770044883033" aria-pressed="true" style="--sw:#80868B"><i></i><span>Nardo grey</span></button><button class="finish-btn" type="button" data-finish="red" data-gtin="3770044883040" aria-pressed="false" style="--sw:linear-gradient(90deg,#141516 50%,#D3172B 50%)"><i></i><span>Black and red</span></button><button class="finish-btn" type="button" data-finish="black" data-gtin="3770044883026" aria-pressed="false" style="--sw:#141516"><i></i><span>Black</span></button></div>
         <dl class="pp-kv"><div><dt>Tools</dt><dd>276</dd></div><div><dt>Drawers</dt><dd>8</dd></div><div><dt>Torque</dt><dd>5–210<small>N·m</small></dd></div><div><dt>Dimensions</dt><dd>84 × 98 × 46<small>cm</small></dd></div><div><dt>Drawer size</dt><dd>51 × 39<small>cm</small></dd></div><div><dt>Weight</dt><dd>85<small>kg</small></dd></div></dl>
         <div class="pp-buy">
           <p class="price-lg">€899<small>Retail price incl. VAT</small></p>
           <div class="actions"><a class="btn btn-primary" href="en.html#distribution">Request a quote</a><a class="btn btn-ghost ticks" href="mailto:contact@brumann.fr?subject=Information%20request%20%C2%B7%20Max%20Edition%20trolley">Email Brumann</a></div>
         </div>
         <p class="pp-dl"><a class="btn btn-ghost ticks" href="brumann-datasheet-max-edition-en.pdf" download>Download the technical data sheet (PDF)</a></p>
-        <p class="data pp-ref">Ref. BRU-SER-8T</p>
+        <p class="data pp-ref">Ref. BRU-SER-8T by colour · GTIN <b id="pp-gtin">3770044883033</b></p>
       </div>
     </div>
   </div>
@@ -966,8 +995,15 @@ html body .dl-hq text{stroke:#EAF2F9}
 </section>
 <section class="sec sec-alt" aria-labelledby="gal1-title">
   <div class="wrap">
+    <div class="rail"><span>Drawer by drawer</span><span>Max Edition trolley</span></div>
+    <div class="sec-head"><h2 class="h2" id="gal1-title">The eight drawers, open.</h2></div>
+    <div class="pp-gal portrait"><figure><div class="gi"><img src="img/servante_tiroir1.webp" width="1000" height="1333" alt="Drawer 1: sockets and ratchets" loading="lazy"></div><figcaption>Drawer 1: sockets and ratchets</figcaption></figure><figure><div class="gi"><img src="img/servante_tiroir2.webp" width="1000" height="1333" alt="Drawer 2: screwdriver bits" loading="lazy"></div><figcaption>Drawer 2: screwdriver bits</figcaption></figure><figure><div class="gi"><img src="img/servante_tiroir3.webp" width="1000" height="1333" alt="Drawer 3: spanners and torque wrenches" loading="lazy"></div><figcaption>Drawer 3: spanners and torque wrenches</figcaption></figure><figure><div class="gi"><img src="img/servante_tiroir4.webp" width="1000" height="1333" alt="Drawer 4: screwdrivers" loading="lazy"></div><figcaption>Drawer 4: screwdrivers</figcaption></figure><figure><div class="gi"><img src="img/servante_tiroir5.webp" width="1000" height="1333" alt="Drawer 5: pliers, hammer and measuring tools" loading="lazy"></div><figcaption>Drawer 5: pliers, hammer and measuring tools</figcaption></figure><figure><div class="gi"><img src="img/servante_tiroir6.webp" width="1000" height="1333" alt="Drawer 6: T-handle keys" loading="lazy"></div><figcaption>Drawer 6: T-handle keys</figcaption></figure><figure><div class="gi"><img src="img/servante_tiroir7.webp" width="1000" height="1333" alt="Drawer 7: free, or optional module" loading="lazy"></div><figcaption>Drawer 7: free, or optional module</figcaption></figure><figure><div class="gi"><img src="img/servante_tiroir8.webp" width="1000" height="1333" alt="Drawer 8: free for your own storage" loading="lazy"></div><figcaption>Drawer 8: free for your own storage</figcaption></figure></div>
+  </div>
+</section>
+<section class="sec" aria-labelledby="gal2-title">
+  <div class="wrap">
     <div class="rail"><span>Optional modules</span><span>Max Edition trolley</span></div>
-    <div class="sec-head"><h2 class="h2" id="gal1-title">Drawers 7 and 8, your way.</h2></div>
+    <div class="sec-head"><h2 class="h2" id="gal2-title">Drawers 7 and 8, your way.</h2></div>
     <div class="pp-gal"><figure><div class="gi"><img src="img/mod_tkeys.webp" width="1080" height="767" alt="T-handle wrenches, 6 to 19 mm" loading="lazy"></div><figcaption>T-handle wrenches, 6 to 19 mm</figcaption></figure><figure><div class="gi"><img src="img/mod_pipe.webp" width="1400" height="1012" alt="L-shaped socket wrenches" loading="lazy"></div><figcaption>L-shaped socket wrenches</figcaption></figure><figure><div class="gi"><img src="img/mod_impact.webp" width="1400" height="1043" alt="Long impact sockets ½″" loading="lazy"></div><figcaption>Long impact sockets ½″</figcaption></figure></div>
   </div>
 </section>
@@ -975,7 +1011,7 @@ html body .dl-hq text{stroke:#EAF2F9}
   <div class="wrap">
     <div class="rail"><span>The 8 drawers</span><span>276 tools · 8 drawers · 3 finishes</span></div>
     <div class="sec-head"><h2 class="h2" id="drawers-title">Drawer by drawer.</h2><p class="lead">Six drawers fitted with moulded foam modules, two free drawers.</p></div>
-    <div class="pp-drawers"><article class="panel"><figure class="panel-fig ticks"><span class="panel-tag">Drawer 1 · 82 pieces</span><img src="img/drawer_sockets.webp" width="508" height="360" alt="Moulded foam module with sockets and ratchets" loading="lazy"></figure><div><h3>All the essential sockets, from ¼″ to ½″.</h3><dl class="contents"><div><dt>Standard sockets</dt><dd>13 × ¼″ · 4 to 14 mm<br>10 × ⅜″ · 8 to 19 mm<br>18 × ½″ · 8 to 32 mm</dd></div><div><dt>Deep sockets</dt><dd>10 × ¼″ · 4 to 13 mm<br>8 × ⅜″ · 10 to 19 mm<br>9 × ½″ · 8 to 16 mm</dd></div><div><dt>Accessories</dt><dd>3 extension bars<br>3 universal joints<br>4 colour-coded ½″ sockets · 17 to 22 mm</dd></div><div><dt>Ratchets</dt><dd>3 quick-release ratchets<br>¼″ · ⅜″ · ½″</dd></div></dl></div></article><article class="panel"><figure class="panel-fig ticks"><span class="panel-tag">Drawer 2 · 102 pieces</span><img src="img/drawer_bits.webp" width="1109" height="838" alt="Module with bits and bit sockets" loading="lazy"></figure><div><h3>102 pieces to cover every fastener profile.</h3><dl class="contents"><div><dt>Screwdriver bits</dt><dd>H · PH · PZ · S · FD</dd></div><div><dt>Torx and Spanner</dt><dd>Torx T8 to T45<br>Tamper-proof Torx TT8 to TT50<br>Spanner SP4 to SP10</dd></div><div><dt>Bit sockets</dt><dd>Torx T50 to T80<br>M9 to M18 · R7 to R10</dd></div><div><dt>Hex</dt><dd>H5 to H24<br>1 torque socket</dd></div></dl></div></article><article class="panel"><figure class="panel-fig ticks"><span class="panel-tag">Drawer 3 · 22 pieces</span><img src="img/drawer_torque.webp" width="1127" height="838" alt="Module with ratcheting spanners and torque wrenches" loading="lazy"></figure><div><h3>From fast tightening to precise torque control.</h3><dl class="contents"><div><dt>Ratcheting spanners</dt><dd>14 spanners · 8 to 24 mm</dd></div><div><dt>Combination spanners</dt><dd>27 · 30 · 32 mm</dd></div><div><dt>½″ torque wrench</dt><dd>40 to 210 N·m</dd></div><div><dt>¼″ torque wrench</dt><dd>5 to 25 N·m</dd></div></dl></div></article><article class="panel"><figure class="panel-fig ticks"><span class="panel-tag">Drawer 4 · 25 pieces</span><img src="img/drawer_drivers.webp" width="1190" height="838" alt="Module with standard, electrician and precision screwdrivers" loading="lazy"></figure><div><h3>A screwdriver for every level of precision.</h3><dl class="contents"><div><dt>Standard</dt><dd>6 flat SL · 6 Phillips PH</dd></div><div><dt>Electrician</dt><dd>3 flat SL · 3 Phillips PH</dd></div><div><dt>Precision</dt><dd>3 flat SL · 3 Phillips PH<br>1 Torx T5</dd></div></dl></div></article><article class="panel"><figure class="panel-fig ticks"><span class="panel-tag">Drawer 5 · 16 pieces</span><img src="img/drawer_pliers.webp" width="1250" height="901" alt="Module with pliers, hammer, mallet and measuring tools" loading="lazy"></figure><div><h3>Grip, strike and measure with a single set.</h3><dl class="contents"><div><dt>8 pliers</dt><dd>Circlip, combination, long nose, bent nose, diagonal cutters, slip-joint</dd></div><div><dt>Pin punches</dt><dd>1.5 · 3 · 4 mm<br>150 mm long</dd></div><div><dt>Striking</dt><dd>1 hammer · 1 mallet</dd></div><div><dt>Measuring</dt><dd>3 m tape measure<br>150 mm rule · calliper</dd></div></dl></div></article><article class="panel"><figure class="panel-fig ticks"><span class="panel-tag">Drawer 6 · 14 pieces</span><img src="img/drawer_tkeys.webp" width="1149" height="838" alt="Module with Torx and Hex T-handle keys" loading="lazy"></figure><div><h3>T-handle keys, Torx and Hex.</h3><dl class="contents"><div><dt>7 Torx T-handle keys</dt><dd>T15 to T50<br>100 to 200 mm</dd></div><div><dt>7 Hex T-handle keys</dt><dd>H2.5 to H10<br>100 to 200 mm</dd></div></dl></div></article><article class="panel"><figure class="panel-fig ticks"><span class="panel-tag">Drawers 7 and 8 · custom</span><img src="img/drawer_empty.webp" width="1104" height="1472" alt="Open, empty trolley drawer" loading="lazy" style="object-position:50% 72%"></figure><div><h3>Left empty or fitted to order.</h3><dl class="contents"><div><dt>Free</dt><dd>For your own specialist tools</dd></div><div><dt>Optional modules</dt><dd>T-handle wrenches from 6 to 19 mm, L-shaped socket wrenches, long impact sockets ½″ and other modules on request</dd></div><div><dt>Additional fitted module</dt><dd>€80 incl. VAT</dd></div></dl></div></article></div>
+    <div class="pp-drawers"><article class="panel"><figure class="panel-fig ticks"><span class="panel-tag">Drawer 1 · 82 pieces</span><img src="img/drawer_sockets.webp" width="1600" height="1201" alt="Moulded foam module with sockets and ratchets" loading="lazy"></figure><div><h3>All the essential sockets, from ¼″ to ½″.</h3><dl class="contents"><div><dt>Standard sockets</dt><dd>13 × ¼″ · 4 to 14 mm<br>10 × ⅜″ · 8 to 19 mm<br>18 × ½″ · 8 to 32 mm</dd></div><div><dt>Deep sockets</dt><dd>10 × ¼″ · 4 to 13 mm<br>8 × ⅜″ · 10 to 19 mm<br>9 × ½″ · 8 to 16 mm</dd></div><div><dt>Accessories</dt><dd>3 extension bars<br>3 universal joints<br>4 colour-coded ½″ sockets · 17 to 22 mm</dd></div><div><dt>Ratchets</dt><dd>3 quick-release ratchets<br>¼″ · ⅜″ · ½″</dd></div></dl></div></article><article class="panel"><figure class="panel-fig ticks"><span class="panel-tag">Drawer 2 · 102 pieces</span><img src="img/drawer_bits.webp" width="1600" height="1208" alt="Module with bits and bit sockets" loading="lazy"></figure><div><h3>102 pieces to cover every fastener profile.</h3><dl class="contents"><div><dt>Screwdriver bits</dt><dd>H · PH · PZ · S · FD</dd></div><div><dt>Torx and Spanner</dt><dd>Torx T8 to T45<br>Tamper-proof Torx TT8 to TT50<br>Spanner SP4 to SP10</dd></div><div><dt>Bit sockets</dt><dd>Torx T50 to T80<br>M9 to M18 · R7 to R10</dd></div><div><dt>Hex</dt><dd>H5 to H24<br>1 torque socket</dd></div></dl></div></article><article class="panel"><figure class="panel-fig ticks"><span class="panel-tag">Drawer 3 · 22 pieces</span><img src="img/drawer_torque.webp" width="1383" height="1027" alt="Module with ratcheting spanners and torque wrenches" loading="lazy"></figure><div><h3>From fast tightening to precise torque control.</h3><dl class="contents"><div><dt>Ratcheting spanners</dt><dd>14 spanners · 8 to 24 mm</dd></div><div><dt>Combination spanners</dt><dd>27 · 30 · 32 mm</dd></div><div><dt>½″ torque wrench</dt><dd>40 to 210 N·m</dd></div><div><dt>¼″ torque wrench</dt><dd>5 to 25 N·m</dd></div></dl></div></article><article class="panel"><figure class="panel-fig ticks"><span class="panel-tag">Drawer 4 · 25 pieces</span><img src="img/drawer_drivers.webp" width="1600" height="1199" alt="Module with standard, electrician and precision screwdrivers" loading="lazy"></figure><div><h3>A screwdriver for every level of precision.</h3><dl class="contents"><div><dt>Standard</dt><dd>6 flat SL · 6 Phillips PH</dd></div><div><dt>Electrician</dt><dd>3 flat SL · 3 Phillips PH</dd></div><div><dt>Precision</dt><dd>3 flat SL · 3 Phillips PH<br>1 Torx T5</dd></div></dl></div></article><article class="panel"><figure class="panel-fig ticks"><span class="panel-tag">Drawer 5 · 16 pieces</span><img src="img/drawer_pliers.webp" width="1600" height="1153" alt="Module with pliers, hammer, mallet and measuring tools" loading="lazy"></figure><div><h3>Grip, strike and measure with a single set.</h3><dl class="contents"><div><dt>8 pliers</dt><dd>Circlip, combination, long nose, bent nose, diagonal cutters, slip-joint</dd></div><div><dt>Pin punches</dt><dd>1.5 · 3 · 4 mm<br>150 mm long</dd></div><div><dt>Striking</dt><dd>1 hammer · 1 mallet</dd></div><div><dt>Measuring</dt><dd>3 m tape measure<br>150 mm rule · calliper</dd></div></dl></div></article><article class="panel"><figure class="panel-fig ticks"><span class="panel-tag">Drawer 6 · 14 pieces</span><img src="img/drawer_tkeys.webp" width="1600" height="1166" alt="Module with Torx and Hex T-handle keys" loading="lazy"></figure><div><h3>T-handle keys, Torx and Hex.</h3><dl class="contents"><div><dt>7 Torx T-handle keys</dt><dd>T15 to T50<br>100 to 200 mm</dd></div><div><dt>7 Hex T-handle keys</dt><dd>H2.5 to H10<br>100 to 200 mm</dd></div></dl></div></article><article class="panel"><figure class="panel-fig ticks"><span class="panel-tag">Drawers 7 and 8 · custom</span><img src="img/drawer_empty.webp" width="1104" height="1472" alt="Open, empty trolley drawer" loading="lazy" style="object-position:50% 72%"></figure><div><h3>Left empty or fitted to order.</h3><dl class="contents"><div><dt>Free</dt><dd>For your own specialist tools</dd></div><div><dt>Optional modules</dt><dd>T-handle wrenches from 6 to 19 mm, L-shaped socket wrenches, long impact sockets ½″ and other modules on request</dd></div><div><dt>Additional fitted module</dt><dd>€80 incl. VAT</dd></div></dl></div></article></div>
   </div>
 </section>
 <section class="sec sec-alt" aria-labelledby="torque-title">
@@ -1057,6 +1093,7 @@ html body .dl-hq text{stroke:#EAF2F9}
   $$('.finish-btn').forEach(b => b.addEventListener('click', () => {
     $$('.finish-btn').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
     $$('.finish-img').forEach(img => img.classList.toggle('is-active', img.dataset.finish === b.dataset.finish));
+    const g = $('#pp-gtin'); if (g && b.dataset.gtin) g.textContent = b.dataset.gtin;
   }));
   $$('.torch').forEach(el => el.addEventListener('pointermove', e => {
     const r = el.getBoundingClientRect();

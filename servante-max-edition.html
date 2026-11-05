@@ -595,6 +595,9 @@ dialog.legal::backdrop{background:rgba(4,9,14,.72);-webkit-backdrop-filter:blur(
 .pp-gal figure{margin:0;background:var(--cabin-2)}
 .pp-gal .gi{display:grid;place-items:center;aspect-ratio:4/3;background:#fff;overflow:hidden}
 .pp-gal img{display:block;width:100%;height:100%;object-fit:contain}
+.pp-gal.portrait{grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.pp-gal.portrait .gi{aspect-ratio:3/4}
+.pp-gal.portrait img{object-fit:cover}
 .pp-gal figcaption{padding:14px 16px 16px;font-size:14.5px;line-height:1.45;color:var(--alu)}
 .pp-compos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 .pp-compos figure{margin:0;background:var(--cabin-2)}
@@ -788,6 +791,32 @@ html body .dl-hq text{stroke:#EAF2F9}
      "@id": "https://giannidavinci23.github.io/brumann/#organisation"
     }
    },
+   "hasVariant": [
+    {
+     "@type": "Product",
+     "name": "Servante Max Édition · Gris Nardo",
+     "sku": "BRU-SER-8T",
+     "gtin13": "3770044883033",
+     "color": "Gris Nardo",
+     "image": "https://giannidavinci23.github.io/brumann/img/cart_nardo.webp"
+    },
+    {
+     "@type": "Product",
+     "name": "Servante Max Édition · Noir et rouge",
+     "sku": "BRU-SER-8T",
+     "gtin13": "3770044883040",
+     "color": "Noir et rouge",
+     "image": "https://giannidavinci23.github.io/brumann/img/cart_red.webp"
+    },
+    {
+     "@type": "Product",
+     "name": "Servante Max Édition · Noir",
+     "sku": "BRU-SER-8T",
+     "gtin13": "3770044883026",
+     "color": "Noir",
+     "image": "https://giannidavinci23.github.io/brumann/img/cart_black.webp"
+    }
+   ],
    "color": "Gris Nardo, Noir et rouge, Noir",
    "additionalProperty": [
     {
@@ -936,14 +965,14 @@ html body .dl-hq text{stroke:#EAF2F9}
         <p class="eyebrow">Max Édition · Série 8T/7</p>
         <h1 id="pp-title">Servante Max Édition</h1>
         <p class="lead">Un plateau supérieur en aluminium, six tiroirs outillés sur huit, un placard latéral de rangement et deux clés dynamométriques de 5 à 210 N·m : 276 outils en chrome vanadium pour votre garage ou votre atelier.</p>
-        <div class="finishes" role="group" aria-label="Finition"><span class="data">Finition</span><button class="finish-btn" type="button" data-finish="nardo" aria-pressed="true" style="--sw:#80868B"><i></i><span>Gris Nardo</span></button><button class="finish-btn" type="button" data-finish="red" aria-pressed="false" style="--sw:linear-gradient(90deg,#141516 50%,#D3172B 50%)"><i></i><span>Noir et rouge</span></button><button class="finish-btn" type="button" data-finish="black" aria-pressed="false" style="--sw:#141516"><i></i><span>Noir</span></button></div>
+        <div class="finishes" role="group" aria-label="Finition"><span class="data">Finition</span><button class="finish-btn" type="button" data-finish="nardo" data-gtin="3770044883033" aria-pressed="true" style="--sw:#80868B"><i></i><span>Gris Nardo</span></button><button class="finish-btn" type="button" data-finish="red" data-gtin="3770044883040" aria-pressed="false" style="--sw:linear-gradient(90deg,#141516 50%,#D3172B 50%)"><i></i><span>Noir et rouge</span></button><button class="finish-btn" type="button" data-finish="black" data-gtin="3770044883026" aria-pressed="false" style="--sw:#141516"><i></i><span>Noir</span></button></div>
         <dl class="pp-kv"><div><dt>Outils</dt><dd>276</dd></div><div><dt>Tiroirs</dt><dd>8</dd></div><div><dt>Couple</dt><dd>5–210<small>N·m</small></dd></div><div><dt>Dimensions</dt><dd>84 × 98 × 46<small>cm</small></dd></div><div><dt>Tiroirs</dt><dd>51 × 39<small>cm</small></dd></div><div><dt>Masse</dt><dd>85<small>kg</small></dd></div></dl>
         <div class="pp-buy">
           <p class="price-lg">899&nbsp;€<small>Prix public TTC</small></p>
           <div class="actions"><a class="btn btn-primary" href="./#distribution">Demander un devis</a><a class="btn btn-ghost ticks" href="mailto:contact@brumann.fr?subject=Demande%20d%E2%80%99information%20%C2%B7%20Servante%20Max%20%C3%89dition">Écrire à Brumann</a></div>
         </div>
         <p class="pp-dl"><a class="btn btn-ghost ticks" href="brumann-fiche-max-edition-fr.pdf" download>Télécharger la fiche technique (PDF)</a></p>
-        <p class="data pp-ref">Réf. BRU-SER-8T</p>
+        <p class="data pp-ref">Réf. BRU-SER-8T selon couleur · GTIN <b id="pp-gtin">3770044883033</b></p>
       </div>
     </div>
   </div>
@@ -975,8 +1004,15 @@ html body .dl-hq text{stroke:#EAF2F9}
 </section>
 <section class="sec sec-alt" aria-labelledby="gal1-title">
   <div class="wrap">
+    <div class="rail"><span>Tiroir par tiroir</span><span>Servante Max Édition</span></div>
+    <div class="sec-head"><h2 class="h2" id="gal1-title">Les huit tiroirs, ouverts.</h2></div>
+    <div class="pp-gal portrait"><figure><div class="gi"><img src="img/servante_tiroir1.webp" width="1000" height="1333" alt="Tiroir 1 : douilles et cliquets" loading="lazy"></div><figcaption>Tiroir 1 : douilles et cliquets</figcaption></figure><figure><div class="gi"><img src="img/servante_tiroir2.webp" width="1000" height="1333" alt="Tiroir 2 : embouts de vissage" loading="lazy"></div><figcaption>Tiroir 2 : embouts de vissage</figcaption></figure><figure><div class="gi"><img src="img/servante_tiroir3.webp" width="1000" height="1333" alt="Tiroir 3 : clés plates et clés dynamométriques" loading="lazy"></div><figcaption>Tiroir 3 : clés plates et clés dynamométriques</figcaption></figure><figure><div class="gi"><img src="img/servante_tiroir4.webp" width="1000" height="1333" alt="Tiroir 4 : tournevis" loading="lazy"></div><figcaption>Tiroir 4 : tournevis</figcaption></figure><figure><div class="gi"><img src="img/servante_tiroir5.webp" width="1000" height="1333" alt="Tiroir 5 : pinces, marteau et mesure" loading="lazy"></div><figcaption>Tiroir 5 : pinces, marteau et mesure</figcaption></figure><figure><div class="gi"><img src="img/servante_tiroir6.webp" width="1000" height="1333" alt="Tiroir 6 : clés en T" loading="lazy"></div><figcaption>Tiroir 6 : clés en T</figcaption></figure><figure><div class="gi"><img src="img/servante_tiroir7.webp" width="1000" height="1333" alt="Tiroir 7 : libre, ou module en option" loading="lazy"></div><figcaption>Tiroir 7 : libre, ou module en option</figcaption></figure><figure><div class="gi"><img src="img/servante_tiroir8.webp" width="1000" height="1333" alt="Tiroir 8 : libre pour votre rangement" loading="lazy"></div><figcaption>Tiroir 8 : libre pour votre rangement</figcaption></figure></div>
+  </div>
+</section>
+<section class="sec" aria-labelledby="gal2-title">
+  <div class="wrap">
     <div class="rail"><span>Modules en option</span><span>Servante Max Édition</span></div>
-    <div class="sec-head"><h2 class="h2" id="gal1-title">Les tiroirs 7 et 8 à votre main.</h2></div>
+    <div class="sec-head"><h2 class="h2" id="gal2-title">Les tiroirs 7 et 8 à votre main.</h2></div>
     <div class="pp-gal"><figure><div class="gi"><img src="img/mod_tkeys.webp" width="1080" height="767" alt="Clés en T de 6 à 19 mm" loading="lazy"></div><figcaption>Clés en T de 6 à 19 mm</figcaption></figure><figure><div class="gi"><img src="img/mod_pipe.webp" width="1400" height="1012" alt="Clés à pipe" loading="lazy"></div><figcaption>Clés à pipe</figcaption></figure><figure><div class="gi"><img src="img/mod_impact.webp" width="1400" height="1043" alt="Douilles à chocs longues ½″" loading="lazy"></div><figcaption>Douilles à chocs longues ½″</figcaption></figure></div>
   </div>
 </section>
@@ -984,31 +1020,31 @@ html body .dl-hq text{stroke:#EAF2F9}
   <div class="wrap">
     <div class="rail"><span>Les 8 tiroirs</span><span>276 outils · 8 tiroirs · 3 finitions</span></div>
     <div class="sec-head"><h2 class="h2" id="drawers-title">Tiroir par tiroir.</h2><p class="lead">Six tiroirs équipés de modules en mousse moulée, deux tiroirs libres.</p></div>
-    <div class="pp-drawers"><article class="panel"><figure class="panel-fig ticks"><span class="panel-tag">Tiroir 1 · 82 pièces</span><img src="img/drawer_sockets.webp" width="508" height="360" alt="Module de douilles et cliquets en mousse moulée" loading="lazy"></figure><div><h3>L’essentiel des douilles, du ¼″ au ½″.</h3><dl class="contents">
+    <div class="pp-drawers"><article class="panel"><figure class="panel-fig ticks"><span class="panel-tag">Tiroir 1 · 82 pièces</span><img src="img/drawer_sockets.webp" width="1600" height="1201" alt="Module de douilles et cliquets en mousse moulée" loading="lazy"></figure><div><h3>L’essentiel des douilles, du ¼″ au ½″.</h3><dl class="contents">
               <div><dt>Douilles standard</dt><dd>13 × ¼″ · 4 à 14 mm<br>10 × ⅜″ · 8 à 19 mm<br>18 × ½″ · 8 à 32 mm</dd></div>
               <div><dt>Douilles profondes</dt><dd>10 × ¼″ · 4 à 13 mm<br>8 × ⅜″ · 10 à 19 mm<br>9 × ½″ · 8 à 16 mm</dd></div>
               <div><dt>Accessoires</dt><dd>3 barres d’extension<br>3 rallonges universelles<br>4 douilles couleur ½″ · 17 à 22 mm</dd></div>
               <div><dt>Cliquets</dt><dd>3 cliquets à dégagement rapide<br>¼″ · ⅜″ · ½″</dd></div>
-            </dl></div></article><article class="panel"><figure class="panel-fig ticks"><span class="panel-tag">Tiroir 2 · 102 pièces</span><img src="img/drawer_bits.webp" width="1109" height="838" alt="Module d’embouts et de douilles à embouts" loading="lazy"></figure><div><h3>102 pièces pour couvrir toutes les empreintes.</h3><dl class="contents">
+            </dl></div></article><article class="panel"><figure class="panel-fig ticks"><span class="panel-tag">Tiroir 2 · 102 pièces</span><img src="img/drawer_bits.webp" width="1600" height="1208" alt="Module d’embouts et de douilles à embouts" loading="lazy"></figure><div><h3>102 pièces pour couvrir toutes les empreintes.</h3><dl class="contents">
               <div><dt>Embouts de vissage</dt><dd>H · PH · PZ · S · FD</dd></div>
               <div><dt>Torx et Spanner</dt><dd>Torx T8 à T45<br>Torx inviolables TT8 à TT50<br>Spanner SP4 à SP10</dd></div>
               <div><dt>Douilles à embouts</dt><dd>Torx T50 à T80<br>M9 à M18 · R7 à R10</dd></div>
               <div><dt>Hexagonaux</dt><dd>H5 à H24<br>1 douille de couple</dd></div>
-            </dl></div></article><article class="panel"><figure class="panel-fig ticks"><span class="panel-tag">Tiroir 3 · 22 pièces</span><img src="img/drawer_torque.webp" width="1127" height="838" alt="Module de clés plates à cliquet et clés dynamométriques" loading="lazy"></figure><div><h3>Du serrage rapide au contrôle précis du couple.</h3><dl class="contents">
+            </dl></div></article><article class="panel"><figure class="panel-fig ticks"><span class="panel-tag">Tiroir 3 · 22 pièces</span><img src="img/drawer_torque.webp" width="1383" height="1027" alt="Module de clés plates à cliquet et clés dynamométriques" loading="lazy"></figure><div><h3>Du serrage rapide au contrôle précis du couple.</h3><dl class="contents">
               <div><dt>Clés plates à cliquet</dt><dd>14 clés · 8 à 24 mm</dd></div>
               <div><dt>Clés mixtes</dt><dd>27 · 30 · 32 mm</dd></div>
               <div><dt>Clé dynamométrique ½″</dt><dd>40 à 210 N·m</dd></div>
               <div><dt>Clé dynamométrique ¼″</dt><dd>5 à 25 N·m</dd></div>
-            </dl></div></article><article class="panel"><figure class="panel-fig ticks"><span class="panel-tag">Tiroir 4 · 25 pièces</span><img src="img/drawer_drivers.webp" width="1190" height="838" alt="Module de tournevis standard, d’électricien et de précision" loading="lazy"></figure><div><h3>Un tournevis adapté à chaque niveau de précision.</h3><dl class="contents">
+            </dl></div></article><article class="panel"><figure class="panel-fig ticks"><span class="panel-tag">Tiroir 4 · 25 pièces</span><img src="img/drawer_drivers.webp" width="1600" height="1199" alt="Module de tournevis standard, d’électricien et de précision" loading="lazy"></figure><div><h3>Un tournevis adapté à chaque niveau de précision.</h3><dl class="contents">
               <div><dt>Standard</dt><dd>6 plats SL · 6 cruciformes PH</dd></div>
               <div><dt>Électricien</dt><dd>3 plats SL · 3 cruciformes PH</dd></div>
               <div><dt>Précision</dt><dd>3 plats SL · 3 cruciformes PH<br>1 Torx T5</dd></div>
-            </dl></div></article><article class="panel"><figure class="panel-fig ticks"><span class="panel-tag">Tiroir 5 · 16 pièces</span><img src="img/drawer_pliers.webp" width="1250" height="901" alt="Module de pinces, marteau, maillet et instruments de mesure" loading="lazy"></figure><div><h3>Prendre, frapper et mesurer avec un seul ensemble.</h3><dl class="contents">
+            </dl></div></article><article class="panel"><figure class="panel-fig ticks"><span class="panel-tag">Tiroir 5 · 16 pièces</span><img src="img/drawer_pliers.webp" width="1600" height="1153" alt="Module de pinces, marteau, maillet et instruments de mesure" loading="lazy"></figure><div><h3>Prendre, frapper et mesurer avec un seul ensemble.</h3><dl class="contents">
               <div><dt>8 pinces</dt><dd>Circlips, universelle, bec long, bec coudé, coupante diagonale, multiprise</dd></div>
               <div><dt>Chasse-goupilles</dt><dd>1,5 · 3 · 4 mm<br>Longueur 150 mm</dd></div>
               <div><dt>Frappe</dt><dd>1 marteau · 1 maillet</dd></div>
               <div><dt>Mesure</dt><dd>Mètre ruban 3 m<br>Réglet 150 mm · pied à coulisse</dd></div>
-            </dl></div></article><article class="panel"><figure class="panel-fig ticks"><span class="panel-tag">Tiroir 6 · 14 pièces</span><img src="img/drawer_tkeys.webp" width="1149" height="838" alt="Module de clés en T Torx et Hex" loading="lazy"></figure><div><h3>Les clés en T, Torx et Hex.</h3><dl class="contents">
+            </dl></div></article><article class="panel"><figure class="panel-fig ticks"><span class="panel-tag">Tiroir 6 · 14 pièces</span><img src="img/drawer_tkeys.webp" width="1600" height="1166" alt="Module de clés en T Torx et Hex" loading="lazy"></figure><div><h3>Les clés en T, Torx et Hex.</h3><dl class="contents">
               <div><dt>7 clés en T Torx</dt><dd>T15 à T50<br>100 à 200 mm</dd></div>
               <div><dt>7 clés en T Hex</dt><dd>H2,5 à H10<br>100 à 200 mm</dd></div>
             </dl></div></article><article class="panel"><figure class="panel-fig ticks"><span class="panel-tag">Tiroirs 7 et 8 · à la carte</span><img src="img/drawer_empty.webp" width="1104" height="1472" alt="Tiroir de servante ouvert, vide" loading="lazy" style="object-position:50% 72%"></figure><div><h3>Vides ou personnalisables à la carte.</h3><dl class="contents">
@@ -1097,6 +1133,7 @@ html body .dl-hq text{stroke:#EAF2F9}
   $$('.finish-btn').forEach(b => b.addEventListener('click', () => {
     $$('.finish-btn').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
     $$('.finish-img').forEach(img => img.classList.toggle('is-active', img.dataset.finish === b.dataset.finish));
+    const g = $('#pp-gtin'); if (g && b.dataset.gtin) g.textContent = b.dataset.gtin;
   }));
   $$('.torch').forEach(el => el.addEventListener('pointermove', e => {
     const r = el.getBoundingClientRect();

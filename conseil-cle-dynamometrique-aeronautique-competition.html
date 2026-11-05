@@ -598,6 +598,9 @@ dialog.legal::backdrop{background:rgba(4,9,14,.72);-webkit-backdrop-filter:blur(
 .pp-gal figure{margin:0;background:var(--cabin-2)}
 .pp-gal .gi{display:grid;place-items:center;aspect-ratio:4/3;background:#fff;overflow:hidden}
 .pp-gal img{display:block;width:100%;height:100%;object-fit:contain}
+.pp-gal.portrait{grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.pp-gal.portrait .gi{aspect-ratio:3/4}
+.pp-gal.portrait img{object-fit:cover}
 .pp-gal figcaption{padding:14px 16px 16px;font-size:14.5px;line-height:1.45;color:var(--alu)}
 .pp-compos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 .pp-compos figure{margin:0;background:var(--cabin-2)}
@@ -893,7 +896,7 @@ html body .dl-hq text{stroke:#EAF2F9}
         <p class="lead">En aéronautique comme en course, chaque fixation importante se serre à une valeur précise. La clé dynamométrique n’a de sens que bien choisie, bien tenue et bien utilisée. Voici les bases, sans remplacer la documentation de votre machine.</p>
         <div class="art-meta"><span class="data">5 min de lecture</span><span class="data">Mis à jour le <time datetime="2026-11-05">5 novembre 2026</time></span></div>
       </div>
-      <div class="pp-vis ticks cover"><img class="pp-img" src="img/drawer_torque.webp" width="1127" height="838" alt="Tiroir de la Max Édition contenant les deux clés dynamométriques" fetchpriority="high"></div>
+      <div class="pp-vis ticks cover"><img class="pp-img" src="img/drawer_torque.webp" width="1383" height="1027" alt="Tiroir de la Max Édition contenant les deux clés dynamométriques" fetchpriority="high"></div>
     </div>
   </div>
 </section>
@@ -1003,6 +1006,7 @@ html body .dl-hq text{stroke:#EAF2F9}
   $$('.finish-btn').forEach(b => b.addEventListener('click', () => {
     $$('.finish-btn').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
     $$('.finish-img').forEach(img => img.classList.toggle('is-active', img.dataset.finish === b.dataset.finish));
+    const g = $('#pp-gtin'); if (g && b.dataset.gtin) g.textContent = b.dataset.gtin;
   }));
   $$('.torch').forEach(el => el.addEventListener('pointermove', e => {
     const r = el.getBoundingClientRect();
