@@ -537,74 +537,83 @@ dialog.legal::backdrop{background:rgba(4,9,14,.72);-webkit-backdrop-filter:blur(
   html{scroll-behavior:auto}
   *,*::before,*::after{animation-duration:.001ms!important;animation-delay:0s!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
 }
-/* Variante claire : fond clair, héros / interlude / distribution / pied de page restent sombres pour garder l'ambiance hangar. */
+/* Thème « jour » : tout le site est clair (ciel bleu, lumière). Remplace theme-clair.css. */
 :root{
-  --night:#F3F5F7; --night-2:#E8ECF0; --night-3:#DDE3E9;
+  --night:#F4F7FA; --night-2:#E9EFF5; --night-3:#DCE5EE;
   --cabin:#FFFFFF; --cabin-2:#FFFFFF;
-  --runway:#0B1520; --alu:#2F3E4E; --alu-dim:#55657A; --nardo:#80868B;
-  --line:rgba(11,21,32,.14); --line-2:rgba(11,21,32,.3);
-  --grid:rgba(11,21,32,.06); --grid-2:rgba(11,21,32,.03);
+  --runway:#0B1B2E; --alu:#2B3E52; --alu-dim:#4F6277;
+  --line:rgba(11,27,46,.14); --line-2:rgba(11,27,46,.3);
+  --grid:rgba(11,27,46,.06); --grid-2:rgba(11,27,46,.03);
   --ink-2:#4A5A6A; color-scheme:light;
 }
-/* Zones qui gardent le thème sombre d'origine */
-.hdr,.hero,.interlude,.sec-dist,.ftr,.menu,.legal{
-  --night:#0B1520; --night-2:#0E1B29; --night-3:#08111A; --cabin:#183049; --cabin-2:#112131;
-  --runway:#EEF2F5; --alu:#B9C0C8; --alu-dim:#9AA7B4;
-  --line:rgba(185,192,200,.16); --line-2:rgba(185,192,200,.32); --grid:rgba(185,192,200,.09); --grid-2:rgba(185,192,200,.04);
-  color:var(--runway);
-}
-.hdr,.hero,.interlude,.sec-dist,.ftr{color:#EEF2F5}
-.hdr .btn-primary,.hero .btn-primary,.sec-dist .btn-primary,.menu .btn-primary{background:#EEF2F5;color:#0B1520}
 body{background:var(--night);color:var(--runway)}
-.skip{background:#0B1520;color:#EEF2F5}
-/* Sections claires : cartes blanches, ombre douce */
-.rcard,.prod,.wrench,.compo,.plate{background:#fff;box-shadow:0 1px 0 rgba(11,21,32,.06),0 18px 40px -26px rgba(11,21,32,.3)}
-.rcard:hover{background:#F8FAFB}
-.rcard-vis,.prod-vis,.pp-vis{background:radial-gradient(ellipse 58% 55% at 50% 44%,rgba(255,255,255,.95),transparent 72%),linear-gradient(180deg,#E3E9EE,#D3DBE3)}
-.panel-fig{background:#DDE3E9}
-.panel-tag{background:rgba(243,245,247,.92);color:#0B1520}
+.skip{background:#0B1B2E;color:#EEF2F5}
+/* Cartes blanches, ombre douce */
+.rcard,.prod,.wrench,.compo,.plate{background:#fff;box-shadow:0 1px 0 rgba(11,27,46,.06),0 18px 40px -26px rgba(11,27,46,.3)}
+.rcard:hover{background:#F8FAFC}
+.rcard-vis,.prod-vis,.pp-vis{background:radial-gradient(ellipse 58% 55% at 50% 44%,rgba(255,255,255,.95),transparent 72%),linear-gradient(180deg,#E3EDF6,#D2E0EE)}
+.panel-fig{background:#DCE5EE}
+.panel-tag{background:rgba(244,247,250,.94);color:#0B1B2E}
 .sec-light{background:#FFFFFF}
 .sec-max{background:radial-gradient(ellipse 50% 40% at 26% 30%,#FFFFFF,transparent 70%),var(--night)}
-.price,.price-lg{color:#0B1520}
-.btn-ghost{color:#0B1520;box-shadow:inset 0 0 0 1px rgba(11,21,32,.28)}
-.hdr .btn-ghost,.hero .btn-ghost,.sec-dist .btn-ghost{color:#EEF2F5;box-shadow:inset 0 0 0 1px rgba(185,192,200,.32)}
-.sec-light .btn-primary,.btn-primary{background:#0B1520;color:#EEF2F5}
-.btn-primary:hover{background:#1A2B3E}
-.sec-light .btn-primary{background:#0B1520}
-.finish-btn{color:#0B1520}
-.finish-btn[aria-pressed="true"]{box-shadow:inset 0 0 0 1px #0B1520}
-.torch::before{background:radial-gradient(300px circle at var(--mx,50%) var(--my,50%),rgba(255,255,255,.7),transparent 65%)}
-.sec-dist .torch::before,.hero .torch::before{background:radial-gradient(300px circle at var(--mx,50%) var(--my,50%),rgba(198,208,218,.13),transparent 65%)}
-/* La servante schématique reste sombre */
-.cab-wrap .drawer,.cab-top{--runway:#EEF2F5;--alu:#B9C0C8;--alu-dim:#9AA7B4;--line:rgba(185,192,200,.16)}
-.chip span,.field input,.field select,.field textarea{color:#0B1520}
-.sec-dist .field input,.sec-dist .field select,.sec-dist .field textarea,.sec-dist .chip span{color:#EEF2F5}
+.price,.price-lg{color:#0B1B2E}
+.btn-primary,.sec-light .btn-primary{background:#0B1B2E;color:#EEF2F5}
+.btn-primary:hover{background:#1B3350}
+.btn-ghost{color:#0B1B2E;box-shadow:inset 0 0 0 1px rgba(11,27,46,.3)}
+.finish-btn{color:#0B1B2E}
+.finish-btn[aria-pressed="true"]{box-shadow:inset 0 0 0 1px #0B1B2E}
+.torch::before{background:radial-gradient(300px circle at var(--mx,50%) var(--my,50%),rgba(255,255,255,.75),transparent 65%)}
+.chip span,.field input,.field select,.field textarea{color:#0B1B2E}
+.field input,.field select,.field textarea{background:#fff}
 .contact-card{background:#fff}
-.sec-dist .contact-card{background:#112131}
 .qa summary:hover{color:#000}
-.lang button[aria-pressed="true"]{background:#EEF2F5;color:#0B1520}
-/* Variante « jour » : s'ajoute à theme-clair.css. Hero et en-tête passent en clair (hangar de jour) ; l'interlude, la distribution et le pied de page restent sombres. */
-.hdr,.hero{
-  --night:#F3F5F7; --night-2:#E8ECF0; --night-3:#DDE3E9; --cabin:#FFFFFF; --cabin-2:#FFFFFF;
-  --runway:#0B1520; --alu:#2F3E4E; --alu-dim:#4A5A6A;
-  --line:rgba(11,21,32,.16); --line-2:rgba(11,21,32,.3); --grid:rgba(11,21,32,.07); --grid-2:rgba(11,21,32,.035);
-  color:#0B1520;
-}
-.hdr,.hero{color:#0B1520}
-.hdr.is-scrolled{background:rgba(243,245,247,.9);border-bottom-color:rgba(11,21,32,.12)}
-.hdr .btn-primary,.hero .btn-primary{background:#0B1520;color:#EEF2F5}
-.hdr .btn-primary:hover,.hero .btn-primary:hover{background:#1A2B3E}
-.hero .btn-ghost{color:#0B1520;box-shadow:inset 0 0 0 1px rgba(11,21,32,.32)}
-.lang button[aria-pressed="true"]{background:#0B1520;color:#EEF2F5}
+.lang button[aria-pressed="true"]{background:#0B1B2E;color:#EEF2F5}
+/* La servante schématique des tiroirs reste métallique */
+.cab-wrap .drawer,.cab-top{--runway:#EEF2F5;--alu:#B9C0C8;--alu-dim:#9AA7B4;--line:rgba(185,192,200,.16)}
+
+/* En-tête */
+.hdr.is-scrolled{background:rgba(244,247,250,.92);border-bottom-color:rgba(11,27,46,.12)}
+body:not(:has(.hero)) .hdr{background:rgba(244,247,250,.95);border-bottom-color:rgba(11,27,46,.12)}
+.menu,.legal{background:var(--night);color:var(--runway)}
+
+/* Hero : la photo de jour, ciel bleu net */
 .hero-bg::before{background:
-  linear-gradient(90deg,rgba(243,245,247,.94) 0%,rgba(243,245,247,.78) 32%,rgba(243,245,247,.12) 62%,rgba(243,245,247,0) 100%),
-  linear-gradient(180deg,rgba(243,245,247,.55) 0%,rgba(243,245,247,0) 18%,rgba(243,245,247,0) 52%,var(--night) 80%)}
-.hero h1 span+span{background:linear-gradient(100deg,#34475B 0 44%,#8AA0B5 50%,#34475B 56% 100%) 0 0/260% 100%;-webkit-background-clip:text;background-clip:text}
+  linear-gradient(90deg,rgba(255,255,255,.62) 0%,rgba(255,255,255,.42) 30%,rgba(255,255,255,.1) 52%,rgba(255,255,255,0) 66%),
+  linear-gradient(180deg,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 55%,var(--night) 84%)}
+.hero-bg::after{opacity:.5}
+.hero-photo{inset:9% 0 auto 0;width:100%;height:70%;object-position:70% 50%}
+.hero h1{color:#0B1B2E}
+.hero h1 span+span{background:linear-gradient(100deg,#1F4A78 0 44%,#6FA3D6 50%,#1F4A78 56% 100%) 0 0/260% 100%;-webkit-background-clip:text;background-clip:text}
 .beam{display:none}
-.hero-photo{inset:9% 0 auto 6%;width:94%;height:70%;object-position:70% 50%}
-.hero::after{background:#DDE3E9}
-/* Les pages intérieures gardent aussi un en-tête clair */
-body:not(:has(.hero)) .hdr{background:rgba(243,245,247,.94);border-bottom-color:rgba(11,21,32,.12)}
+.hero::after{background:#DCE5EE}
+.hv-img img{filter:saturate(1.05) drop-shadow(0 28px 26px rgba(11,27,46,.32)) drop-shadow(0 6px 8px rgba(11,27,46,.18));-webkit-box-reflect:below -4px linear-gradient(transparent 78%,rgba(255,255,255,.2))}
+.hv-floor{background:radial-gradient(50% 50% at 50% 50%,rgba(11,27,46,.28),transparent 70%)}
+.stage::after{background:radial-gradient(50% 50% at 50% 50%,rgba(11,27,46,.28),transparent 70%)}
+.pin i{background:linear-gradient(90deg,rgba(11,27,46,.75),rgba(11,27,46,.25))}
+.pin::before{box-shadow:inset 0 0 0 1px #0B1B2E,0 0 0 4px rgba(255,255,255,.6)}
+.lights i{background:rgba(11,27,46,.4);box-shadow:none}
+.lights::before{background:rgba(11,27,46,.2)}
+
+/* Interlude : l'avion de jour */
+.interlude{background:var(--night-2)}
+.interlude::after{background:linear-gradient(180deg,var(--night) 0%,rgba(244,247,250,0) 18%,rgba(244,247,250,0) 44%,rgba(244,247,250,.9) 100%),linear-gradient(90deg,rgba(255,255,255,.55) 0%,rgba(255,255,255,0) 52%)}
+
+/* Distribution : la piste de jour */
+.dist-bg img{opacity:.9}
+.dist-bg::after{background:linear-gradient(180deg,var(--night) 0%,rgba(244,247,250,.55) 30%,rgba(244,247,250,.62) 72%,var(--night-2) 100%),linear-gradient(90deg,rgba(244,247,250,.7) 0%,rgba(244,247,250,.1) 64%)}
+.sec-dist .field input,.sec-dist .field select,.sec-dist .field textarea{background:rgba(255,255,255,.92)}
+.sec-dist .chip span{background:rgba(255,255,255,.85)}
+
+/* Pied de page */
+.ftr{background:var(--night-2)}
+.threshold i{background:linear-gradient(180deg,rgba(11,27,46,.12),rgba(11,27,46,.02))}
+
+/* Carte des distributeurs et configurateur : fonds clairs (ces blocs embarquent leur propre CSS, d'où le préfixe) */
+html body .dl-fig,html body .cf-fig{background:linear-gradient(180deg,#EAF2F9,#D3E3F1)}
+html body .dl-item.is-on{background:#EAF2F9}
+html body .cf-opt input:checked+span{background:rgba(11,27,46,.06)}
+html body .dl-land{fill:#FFFFFF;stroke:#7C97B2}
+html body .dl-hq text{stroke:#EAF2F9}
 </style>
 <link rel="canonical" href="https://giannidavinci23.github.io/brumann/">
 <link rel="alternate" hreflang="fr" href="https://giannidavinci23.github.io/brumann/">
@@ -874,7 +883,7 @@ body:not(:has(.hero)) .hdr{background:rgba(243,245,247,.94);border-bottom-color:
 
 <header class="hdr">
   <div class="wrap hdr-in">
-    <a class="hdr-logo" href="#contenu" aria-label="Brumann, retour en haut de page" data-i18n-attr="aria-label:a.top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1468 150" role="img" aria-label="Brumann" class="logo"><rect x="0" y="0" width="26" height="34" fill="#1F3F8F"/><rect x="26" y="0" width="34" height="34" fill="#FFFFFF"/><rect x="60" y="0" width="32" height="34" fill="#D7263D"/><g fill="#0B1520"><path transform="translate(0,0)" d="M98,0 H150 Q180,0 180,28 V58 L196,74 V126 Q196,150 172,150 H0 V58 H146 V34 H98 Z M34,92 H162 V116 H34 Z" fill-rule="evenodd"/><path transform="translate(224,0)" d="M0,0 H152 Q180,0 180,28 V64 Q180,92 152,92 H118 L180,150 H134 L76,92 H34 V150 H0 Z M34,34 H146 V58 H34 Z" fill-rule="evenodd"/><path transform="translate(432,0)" d="M0,0 H34 V108 Q34,116 42,116 H130 Q138,116 138,108 V0 H172 V112 Q172,150 134,150 H38 Q0,150 0,112 Z" fill-rule="evenodd"/><path transform="translate(632,0)" d="M0,0 H40 L120,112 L200,0 H240 V150 H206 V49 L134,150 H106 L34,49 V150 H0 Z" fill-rule="evenodd"/><path transform="translate(886,0)" d="M0,150 L74,0 H116 L190,150 H152 L95,34 L38,150 Z" fill-rule="evenodd"/><path transform="translate(1090,0)" d="M0,0 H40 L141,104 V0 H175 V150 H135 L34,46 V150 H0 Z" fill-rule="evenodd"/><path transform="translate(1293,0)" d="M0,0 H40 L141,104 V0 H175 V150 H135 L34,46 V150 H0 Z" fill-rule="evenodd"/></g></svg></a>
+    <a class="hdr-logo" href="#contenu" aria-label="Brumann, retour en haut de page" data-i18n-attr="aria-label:a.top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1468 150" role="img" aria-label="Brumann" class="logo"><rect x="0" y="0" width="26" height="34" fill="#1F3F8F"/><rect x="26" y="0" width="34" height="34" fill="#FFFFFF"/><rect x="60" y="0" width="32" height="34" fill="#D7263D"/><g fill="#0B1B2E"><path transform="translate(0,0)" d="M98,0 H150 Q180,0 180,28 V58 L196,74 V126 Q196,150 172,150 H0 V58 H146 V34 H98 Z M34,92 H162 V116 H34 Z" fill-rule="evenodd"/><path transform="translate(224,0)" d="M0,0 H152 Q180,0 180,28 V64 Q180,92 152,92 H118 L180,150 H134 L76,92 H34 V150 H0 Z M34,34 H146 V58 H34 Z" fill-rule="evenodd"/><path transform="translate(432,0)" d="M0,0 H34 V108 Q34,116 42,116 H130 Q138,116 138,108 V0 H172 V112 Q172,150 134,150 H38 Q0,150 0,112 Z" fill-rule="evenodd"/><path transform="translate(632,0)" d="M0,0 H40 L120,112 L200,0 H240 V150 H206 V49 L134,150 H106 L34,49 V150 H0 Z" fill-rule="evenodd"/><path transform="translate(886,0)" d="M0,150 L74,0 H116 L190,150 H152 L95,34 L38,150 Z" fill-rule="evenodd"/><path transform="translate(1090,0)" d="M0,0 H40 L141,104 V0 H175 V150 H135 L34,46 V150 H0 Z" fill-rule="evenodd"/><path transform="translate(1293,0)" d="M0,0 H40 L141,104 V0 H175 V150 H135 L34,46 V150 H0 Z" fill-rule="evenodd"/></g></svg></a>
     <nav class="hdr-nav" aria-label="Navigation principale" data-i18n-attr="aria-label:a.nav">
       <a href="#gamme" data-i18n="nav.range">Gamme</a>
       <a href="#max-edition" data-i18n="nav.max">Max Édition</a>
@@ -891,7 +900,7 @@ body:not(:has(.hero)) .hdr{background:rgba(243,245,247,.94);border-bottom-color:
 
 <div class="menu" id="menu" hidden>
   <div class="menu-top">
-    <span class="hdr-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1468 150" role="img" aria-label="Brumann" class="logo"><rect x="0" y="0" width="26" height="34" fill="#1F3F8F"/><rect x="26" y="0" width="34" height="34" fill="#FFFFFF"/><rect x="60" y="0" width="32" height="34" fill="#D7263D"/><g fill="#EEF2F5"><path transform="translate(0,0)" d="M98,0 H150 Q180,0 180,28 V58 L196,74 V126 Q196,150 172,150 H0 V58 H146 V34 H98 Z M34,92 H162 V116 H34 Z" fill-rule="evenodd"/><path transform="translate(224,0)" d="M0,0 H152 Q180,0 180,28 V64 Q180,92 152,92 H118 L180,150 H134 L76,92 H34 V150 H0 Z M34,34 H146 V58 H34 Z" fill-rule="evenodd"/><path transform="translate(432,0)" d="M0,0 H34 V108 Q34,116 42,116 H130 Q138,116 138,108 V0 H172 V112 Q172,150 134,150 H38 Q0,150 0,112 Z" fill-rule="evenodd"/><path transform="translate(632,0)" d="M0,0 H40 L120,112 L200,0 H240 V150 H206 V49 L134,150 H106 L34,49 V150 H0 Z" fill-rule="evenodd"/><path transform="translate(886,0)" d="M0,150 L74,0 H116 L190,150 H152 L95,34 L38,150 Z" fill-rule="evenodd"/><path transform="translate(1090,0)" d="M0,0 H40 L141,104 V0 H175 V150 H135 L34,46 V150 H0 Z" fill-rule="evenodd"/><path transform="translate(1293,0)" d="M0,0 H40 L141,104 V0 H175 V150 H135 L34,46 V150 H0 Z" fill-rule="evenodd"/></g></svg></span>
+    <span class="hdr-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1468 150" role="img" aria-label="Brumann" class="logo"><rect x="0" y="0" width="26" height="34" fill="#1F3F8F"/><rect x="26" y="0" width="34" height="34" fill="#FFFFFF"/><rect x="60" y="0" width="32" height="34" fill="#D7263D"/><g fill="#0B1B2E"><path transform="translate(0,0)" d="M98,0 H150 Q180,0 180,28 V58 L196,74 V126 Q196,150 172,150 H0 V58 H146 V34 H98 Z M34,92 H162 V116 H34 Z" fill-rule="evenodd"/><path transform="translate(224,0)" d="M0,0 H152 Q180,0 180,28 V64 Q180,92 152,92 H118 L180,150 H134 L76,92 H34 V150 H0 Z M34,34 H146 V58 H34 Z" fill-rule="evenodd"/><path transform="translate(432,0)" d="M0,0 H34 V108 Q34,116 42,116 H130 Q138,116 138,108 V0 H172 V112 Q172,150 134,150 H38 Q0,150 0,112 Z" fill-rule="evenodd"/><path transform="translate(632,0)" d="M0,0 H40 L120,112 L200,0 H240 V150 H206 V49 L134,150 H106 L34,49 V150 H0 Z" fill-rule="evenodd"/><path transform="translate(886,0)" d="M0,150 L74,0 H116 L190,150 H152 L95,34 L38,150 Z" fill-rule="evenodd"/><path transform="translate(1090,0)" d="M0,0 H40 L141,104 V0 H175 V150 H135 L34,46 V150 H0 Z" fill-rule="evenodd"/><path transform="translate(1293,0)" d="M0,0 H40 L141,104 V0 H175 V150 H135 L34,46 V150 H0 Z" fill-rule="evenodd"/></g></svg></span>
     <button class="menu-close" type="button" aria-label="Fermer le menu" data-i18n-attr="aria-label:a.close"></button>
   </div>
   <nav aria-label="Navigation mobile" data-i18n-attr="aria-label:a.navm">
@@ -1669,7 +1678,7 @@ body:not(:has(.hero)) .hdr{background:rgba(243,245,247,.94);border-bottom-color:
 <footer class="ftr">
   <div class="threshold" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
   <div class="wrap ftr-grid">
-    <div class="ftr-brand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1468 226" role="img" aria-label="Brumann Professional Quality" class="logo"><defs><clipPath id="bl-ftr"><rect x="-10" y="0" width="916.0" height="32"/></clipPath></defs><rect x="0" y="0" width="26" height="34" fill="#1F3F8F"/><rect x="26" y="0" width="34" height="34" fill="#FFFFFF"/><rect x="60" y="0" width="32" height="34" fill="#D7263D"/><g fill="#EEF2F5"><path transform="translate(0,0)" d="M98,0 H150 Q180,0 180,28 V58 L196,74 V126 Q196,150 172,150 H0 V58 H146 V34 H98 Z M34,92 H162 V116 H34 Z" fill-rule="evenodd"/><path transform="translate(224,0)" d="M0,0 H152 Q180,0 180,28 V64 Q180,92 152,92 H118 L180,150 H134 L76,92 H34 V150 H0 Z M34,34 H146 V58 H34 Z" fill-rule="evenodd"/><path transform="translate(432,0)" d="M0,0 H34 V108 Q34,116 42,116 H130 Q138,116 138,108 V0 H172 V112 Q172,150 134,150 H38 Q0,150 0,112 Z" fill-rule="evenodd"/><path transform="translate(632,0)" d="M0,0 H40 L120,112 L200,0 H240 V150 H206 V49 L134,150 H106 L34,49 V150 H0 Z" fill-rule="evenodd"/><path transform="translate(886,0)" d="M0,150 L74,0 H116 L190,150 H152 L95,34 L38,150 Z" fill-rule="evenodd"/><path transform="translate(1090,0)" d="M0,0 H40 L141,104 V0 H175 V150 H135 L34,46 V150 H0 Z" fill-rule="evenodd"/><path transform="translate(1293,0)" d="M0,0 H40 L141,104 V0 H175 V150 H135 L34,46 V150 H0 Z" fill-rule="evenodd"/></g><rect x="0" y="172" width="1468" height="54" style="fill:#3B4A5A"/><g transform="translate(286.00,183.0)"><g clip-path="url(#bl-ftr)" style="fill:none;stroke:#EEF2F5" stroke-width="4.5" stroke-linejoin="miter"><path transform="translate(0.00,0)" d="M2.25,32.75 V2.25 H22.75 Q29.75,2.25 29.75,9.25 V9 Q29.75,16 22.75,16 H2.25"/><path transform="translate(47.00,0)" d="M2.25,32.75 V2.25 H24.75 Q31.75,2.25 31.75,9.25 V9 Q31.75,16 24.75,16 H2.25 M15,16 L35,33.75"/><path transform="translate(96.00,0)" d="M10.25,2.25 H27.75 Q35.75,2.25 35.75,10.25 V21.75 Q35.75,29.75 27.75,29.75 H10.25 Q2.25,29.75 2.25,21.75 V10.25 Q2.25,2.25 10.25,2.25 Z"/><path transform="translate(149.00,0)" d="M30,2.25 H2.25 V32.75 M2.25,16 H25"/><path transform="translate(194.00,0)" d="M30,2.25 H2.25 V29.75 H30 M2.25,16 H25"/><path transform="translate(239.00,0)" d="M32,2.25 H8.25 Q2.25,2.25 2.25,8.25 V10 Q2.25,16 8.25,16 H23.75 Q29.75,16 29.75,22 V23.75 Q29.75,29.75 23.75,29.75 H0"/><path transform="translate(286.00,0)" d="M32,2.25 H8.25 Q2.25,2.25 2.25,8.25 V10 Q2.25,16 8.25,16 H23.75 Q29.75,16 29.75,22 V23.75 Q29.75,29.75 23.75,29.75 H0"/><path transform="translate(333.00,0)" d="M2.25,-3 V35"/><path transform="translate(352.50,0)" d="M10.25,2.25 H27.75 Q35.75,2.25 35.75,10.25 V21.75 Q35.75,29.75 27.75,29.75 H10.25 Q2.25,29.75 2.25,21.75 V10.25 Q2.25,2.25 10.25,2.25 Z"/><path transform="translate(405.50,0)" d="M2.25,35 V2.25 L33.75,29.75 V-3"/><path transform="translate(456.50,0)" d="M-1,36 L20,1.25 L41,36"/><path transform="translate(511.50,0)" d="M2.25,-3 V29.75 H28"/><path transform="translate(591.50,0)" d="M10.25,2.25 H27.75 Q35.75,2.25 35.75,10.25 V21.75 Q35.75,29.75 27.75,29.75 H10.25 Q2.25,29.75 2.25,21.75 V10.25 Q2.25,2.25 10.25,2.25 Z M27,22.75 L39,36"/><path transform="translate(644.50,0)" d="M2.25,-3 V21.75 Q2.25,29.75 10.25,29.75 H25.75 Q33.75,29.75 33.75,21.75 V-3"/><path transform="translate(695.50,0)" d="M-1,36 L20,1.25 L41,36"/><path transform="translate(750.50,0)" d="M2.25,-3 V29.75 H28"/><path transform="translate(793.50,0)" d="M2.25,-3 V35"/><path transform="translate(813.00,0)" d="M0,2.25 H32 M16,2.25 V35"/><path transform="translate(860.00,0)" d="M0,-2 L18,16 L36,-2 M18,16 V35"/></g></g></svg><p data-i18n="ft.about">Servantes, mobilier d’atelier et outillage professionnel, conçus à l’aérodrome de Toussus-le-Noble.</p></div>
+    <div class="ftr-brand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1468 226" role="img" aria-label="Brumann Professional Quality" class="logo"><defs><clipPath id="bl-ftr"><rect x="-10" y="0" width="916.0" height="32"/></clipPath></defs><rect x="0" y="0" width="26" height="34" fill="#1F3F8F"/><rect x="26" y="0" width="34" height="34" fill="#FFFFFF"/><rect x="60" y="0" width="32" height="34" fill="#D7263D"/><g fill="#0B1B2E"><path transform="translate(0,0)" d="M98,0 H150 Q180,0 180,28 V58 L196,74 V126 Q196,150 172,150 H0 V58 H146 V34 H98 Z M34,92 H162 V116 H34 Z" fill-rule="evenodd"/><path transform="translate(224,0)" d="M0,0 H152 Q180,0 180,28 V64 Q180,92 152,92 H118 L180,150 H134 L76,92 H34 V150 H0 Z M34,34 H146 V58 H34 Z" fill-rule="evenodd"/><path transform="translate(432,0)" d="M0,0 H34 V108 Q34,116 42,116 H130 Q138,116 138,108 V0 H172 V112 Q172,150 134,150 H38 Q0,150 0,112 Z" fill-rule="evenodd"/><path transform="translate(632,0)" d="M0,0 H40 L120,112 L200,0 H240 V150 H206 V49 L134,150 H106 L34,49 V150 H0 Z" fill-rule="evenodd"/><path transform="translate(886,0)" d="M0,150 L74,0 H116 L190,150 H152 L95,34 L38,150 Z" fill-rule="evenodd"/><path transform="translate(1090,0)" d="M0,0 H40 L141,104 V0 H175 V150 H135 L34,46 V150 H0 Z" fill-rule="evenodd"/><path transform="translate(1293,0)" d="M0,0 H40 L141,104 V0 H175 V150 H135 L34,46 V150 H0 Z" fill-rule="evenodd"/></g><rect x="0" y="172" width="1468" height="54" style="fill:#3B4A5A"/><g transform="translate(286.00,183.0)"><g clip-path="url(#bl-ftr)" style="fill:none;stroke:#EEF2F5" stroke-width="4.5" stroke-linejoin="miter"><path transform="translate(0.00,0)" d="M2.25,32.75 V2.25 H22.75 Q29.75,2.25 29.75,9.25 V9 Q29.75,16 22.75,16 H2.25"/><path transform="translate(47.00,0)" d="M2.25,32.75 V2.25 H24.75 Q31.75,2.25 31.75,9.25 V9 Q31.75,16 24.75,16 H2.25 M15,16 L35,33.75"/><path transform="translate(96.00,0)" d="M10.25,2.25 H27.75 Q35.75,2.25 35.75,10.25 V21.75 Q35.75,29.75 27.75,29.75 H10.25 Q2.25,29.75 2.25,21.75 V10.25 Q2.25,2.25 10.25,2.25 Z"/><path transform="translate(149.00,0)" d="M30,2.25 H2.25 V32.75 M2.25,16 H25"/><path transform="translate(194.00,0)" d="M30,2.25 H2.25 V29.75 H30 M2.25,16 H25"/><path transform="translate(239.00,0)" d="M32,2.25 H8.25 Q2.25,2.25 2.25,8.25 V10 Q2.25,16 8.25,16 H23.75 Q29.75,16 29.75,22 V23.75 Q29.75,29.75 23.75,29.75 H0"/><path transform="translate(286.00,0)" d="M32,2.25 H8.25 Q2.25,2.25 2.25,8.25 V10 Q2.25,16 8.25,16 H23.75 Q29.75,16 29.75,22 V23.75 Q29.75,29.75 23.75,29.75 H0"/><path transform="translate(333.00,0)" d="M2.25,-3 V35"/><path transform="translate(352.50,0)" d="M10.25,2.25 H27.75 Q35.75,2.25 35.75,10.25 V21.75 Q35.75,29.75 27.75,29.75 H10.25 Q2.25,29.75 2.25,21.75 V10.25 Q2.25,2.25 10.25,2.25 Z"/><path transform="translate(405.50,0)" d="M2.25,35 V2.25 L33.75,29.75 V-3"/><path transform="translate(456.50,0)" d="M-1,36 L20,1.25 L41,36"/><path transform="translate(511.50,0)" d="M2.25,-3 V29.75 H28"/><path transform="translate(591.50,0)" d="M10.25,2.25 H27.75 Q35.75,2.25 35.75,10.25 V21.75 Q35.75,29.75 27.75,29.75 H10.25 Q2.25,29.75 2.25,21.75 V10.25 Q2.25,2.25 10.25,2.25 Z M27,22.75 L39,36"/><path transform="translate(644.50,0)" d="M2.25,-3 V21.75 Q2.25,29.75 10.25,29.75 H25.75 Q33.75,29.75 33.75,21.75 V-3"/><path transform="translate(695.50,0)" d="M-1,36 L20,1.25 L41,36"/><path transform="translate(750.50,0)" d="M2.25,-3 V29.75 H28"/><path transform="translate(793.50,0)" d="M2.25,-3 V35"/><path transform="translate(813.00,0)" d="M0,2.25 H32 M16,2.25 V35"/><path transform="translate(860.00,0)" d="M0,-2 L18,16 L36,-2 M18,16 V35"/></g></g></svg><p data-i18n="ft.about">Servantes, mobilier d’atelier et outillage professionnel, conçus à l’aérodrome de Toussus-le-Noble.</p></div>
     <div><h4 data-i18n="nav.range">Gamme</h4><ul><li><a href="#max-edition" data-i18n="nav.max">Max Édition</a></li><li><a href="#inventaire" data-i18n="ft.drawers">Les 8 tiroirs</a></li><li><a href="#atelier" data-i18n="c2.t">Mobilier d’atelier</a></li><li><a href="#intervention" data-i18n="ft.field">Mallette et Minibox</a></li><li><a href="#sur-mesure" data-i18n="nav.custom">Sur mesure</a></li></ul></div>
     <div><h4 data-i18n="nav.story">Maison</h4><ul><li><a href="#maison" data-i18n="ft.story">Notre histoire</a></li><li><a href="#distribution">Distribution</a></li><li><a href="Brumann-catalogue-2026-27.pdf" download data-i18n="cat.foot">Catalogue (PDF)</a></li><li><a href="conseils.html" data-i18n="ft.advice">Conseils</a></li><li><a href="#faq" data-i18n="faq.link">Questions fréquentes</a></li><li><button type="button" data-open-legal data-i18n="lg.title">Mentions légales</button></li></ul></div>
     <div><h4>Contact</h4><address data-i18n="ft.address">Aérodrome Paris-Saclay Versailles<br>78117 Toussus-le-Noble<br>contact@brumann.fr<br>07 59 71 12 78</address></div>
