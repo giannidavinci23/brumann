@@ -598,6 +598,28 @@ body{background:var(--night);color:var(--runway)}
 .sec-dist .contact-card{background:#112131}
 .qa summary:hover{color:#000}
 .lang button[aria-pressed="true"]{background:#EEF2F5;color:#0B1520}
+/* Variante « jour » : s'ajoute à theme-clair.css. Hero et en-tête passent en clair (hangar de jour) ; l'interlude, la distribution et le pied de page restent sombres. */
+.hdr,.hero{
+  --night:#F3F5F7; --night-2:#E8ECF0; --night-3:#DDE3E9; --cabin:#FFFFFF; --cabin-2:#FFFFFF;
+  --runway:#0B1520; --alu:#2F3E4E; --alu-dim:#4A5A6A;
+  --line:rgba(11,21,32,.16); --line-2:rgba(11,21,32,.3); --grid:rgba(11,21,32,.07); --grid-2:rgba(11,21,32,.035);
+  color:#0B1520;
+}
+.hdr,.hero{color:#0B1520}
+.hdr.is-scrolled{background:rgba(243,245,247,.9);border-bottom-color:rgba(11,21,32,.12)}
+.hdr .btn-primary,.hero .btn-primary{background:#0B1520;color:#EEF2F5}
+.hdr .btn-primary:hover,.hero .btn-primary:hover{background:#1A2B3E}
+.hero .btn-ghost{color:#0B1520;box-shadow:inset 0 0 0 1px rgba(11,21,32,.32)}
+.lang button[aria-pressed="true"]{background:#0B1520;color:#EEF2F5}
+.hero-bg::before{background:
+  linear-gradient(90deg,rgba(243,245,247,.94) 0%,rgba(243,245,247,.78) 32%,rgba(243,245,247,.12) 62%,rgba(243,245,247,0) 100%),
+  linear-gradient(180deg,rgba(243,245,247,.55) 0%,rgba(243,245,247,0) 18%,rgba(243,245,247,0) 52%,var(--night) 80%)}
+.hero h1 span+span{background:linear-gradient(100deg,#34475B 0 44%,#8AA0B5 50%,#34475B 56% 100%) 0 0/260% 100%;-webkit-background-clip:text;background-clip:text}
+.beam{display:none}
+.hero-photo{inset:9% 0 auto 6%;width:94%;height:70%;object-position:70% 50%}
+.hero::after{background:#DDE3E9}
+/* Les pages intérieures gardent aussi un en-tête clair */
+body:not(:has(.hero)) .hdr{background:rgba(243,245,247,.94);border-bottom-color:rgba(11,21,32,.12)}
 
 .lang a{min-width:34px;padding:7px 8px;color:var(--alu-dim);font:400 11px/1 var(--f-data);letter-spacing:.12em;text-align:center;text-decoration:none;transition:background .2s,color .2s}
 .lang a:hover{color:var(--runway)}
@@ -705,6 +727,28 @@ body{background:var(--night);color:var(--runway)}
 .pp-cta{background:var(--night-2)}
 .pp-vis .pp-tag{color:#4A5A6A}
 .hdr{background:rgba(9,17,26,.94);border-bottom-color:rgba(185,192,200,.16)}
+/* Variante « jour » : s'ajoute à theme-clair.css. Hero et en-tête passent en clair (hangar de jour) ; l'interlude, la distribution et le pied de page restent sombres. */
+.hdr,.hero{
+  --night:#F3F5F7; --night-2:#E8ECF0; --night-3:#DDE3E9; --cabin:#FFFFFF; --cabin-2:#FFFFFF;
+  --runway:#0B1520; --alu:#2F3E4E; --alu-dim:#4A5A6A;
+  --line:rgba(11,21,32,.16); --line-2:rgba(11,21,32,.3); --grid:rgba(11,21,32,.07); --grid-2:rgba(11,21,32,.035);
+  color:#0B1520;
+}
+.hdr,.hero{color:#0B1520}
+.hdr.is-scrolled{background:rgba(243,245,247,.9);border-bottom-color:rgba(11,21,32,.12)}
+.hdr .btn-primary,.hero .btn-primary{background:#0B1520;color:#EEF2F5}
+.hdr .btn-primary:hover,.hero .btn-primary:hover{background:#1A2B3E}
+.hero .btn-ghost{color:#0B1520;box-shadow:inset 0 0 0 1px rgba(11,21,32,.32)}
+.lang button[aria-pressed="true"]{background:#0B1520;color:#EEF2F5}
+.hero-bg::before{background:
+  linear-gradient(90deg,rgba(243,245,247,.94) 0%,rgba(243,245,247,.78) 32%,rgba(243,245,247,.12) 62%,rgba(243,245,247,0) 100%),
+  linear-gradient(180deg,rgba(243,245,247,.55) 0%,rgba(243,245,247,0) 18%,rgba(243,245,247,0) 52%,var(--night) 80%)}
+.hero h1 span+span{background:linear-gradient(100deg,#34475B 0 44%,#8AA0B5 50%,#34475B 56% 100%) 0 0/260% 100%;-webkit-background-clip:text;background-clip:text}
+.beam{display:none}
+.hero-photo{inset:9% 0 auto 6%;width:94%;height:70%;object-position:70% 50%}
+.hero::after{background:#DDE3E9}
+/* Les pages intérieures gardent aussi un en-tête clair */
+body:not(:has(.hero)) .hdr{background:rgba(243,245,247,.94);border-bottom-color:rgba(11,21,32,.12)}
 </style>
 <script type="application/ld+json">
 {
@@ -823,7 +867,7 @@ body{background:var(--night);color:var(--runway)}
 <a class="skip" href="#contenu">Skip to content</a>
 <header class="hdr">
   <div class="wrap hdr-in">
-    <a class="hdr-logo" href="en.html" aria-label="Brumann, back to top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1468 150" role="img" aria-label="Brumann" class="logo"><rect x="0" y="0" width="26" height="34" fill="#1F3F8F"/><rect x="26" y="0" width="34" height="34" fill="#FFFFFF"/><rect x="60" y="0" width="32" height="34" fill="#D7263D"/><g fill="#EEF2F5"><path transform="translate(0,0)" d="M98,0 H150 Q180,0 180,28 V58 L196,74 V126 Q196,150 172,150 H0 V58 H146 V34 H98 Z M34,92 H162 V116 H34 Z" fill-rule="evenodd"/><path transform="translate(224,0)" d="M0,0 H152 Q180,0 180,28 V64 Q180,92 152,92 H118 L180,150 H134 L76,92 H34 V150 H0 Z M34,34 H146 V58 H34 Z" fill-rule="evenodd"/><path transform="translate(432,0)" d="M0,0 H34 V108 Q34,116 42,116 H130 Q138,116 138,108 V0 H172 V112 Q172,150 134,150 H38 Q0,150 0,112 Z" fill-rule="evenodd"/><path transform="translate(632,0)" d="M0,0 H40 L120,112 L200,0 H240 V150 H206 V49 L134,150 H106 L34,49 V150 H0 Z" fill-rule="evenodd"/><path transform="translate(886,0)" d="M0,150 L74,0 H116 L190,150 H152 L95,34 L38,150 Z" fill-rule="evenodd"/><path transform="translate(1090,0)" d="M0,0 H40 L141,104 V0 H175 V150 H135 L34,46 V150 H0 Z" fill-rule="evenodd"/><path transform="translate(1293,0)" d="M0,0 H40 L141,104 V0 H175 V150 H135 L34,46 V150 H0 Z" fill-rule="evenodd"/></g></svg></a>
+    <a class="hdr-logo" href="en.html" aria-label="Brumann, back to top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1468 150" role="img" aria-label="Brumann" class="logo"><rect x="0" y="0" width="26" height="34" fill="#1F3F8F"/><rect x="26" y="0" width="34" height="34" fill="#FFFFFF"/><rect x="60" y="0" width="32" height="34" fill="#D7263D"/><g fill="#0B1520"><path transform="translate(0,0)" d="M98,0 H150 Q180,0 180,28 V58 L196,74 V126 Q196,150 172,150 H0 V58 H146 V34 H98 Z M34,92 H162 V116 H34 Z" fill-rule="evenodd"/><path transform="translate(224,0)" d="M0,0 H152 Q180,0 180,28 V64 Q180,92 152,92 H118 L180,150 H134 L76,92 H34 V150 H0 Z M34,34 H146 V58 H34 Z" fill-rule="evenodd"/><path transform="translate(432,0)" d="M0,0 H34 V108 Q34,116 42,116 H130 Q138,116 138,108 V0 H172 V112 Q172,150 134,150 H38 Q0,150 0,112 Z" fill-rule="evenodd"/><path transform="translate(632,0)" d="M0,0 H40 L120,112 L200,0 H240 V150 H206 V49 L134,150 H106 L34,49 V150 H0 Z" fill-rule="evenodd"/><path transform="translate(886,0)" d="M0,150 L74,0 H116 L190,150 H152 L95,34 L38,150 Z" fill-rule="evenodd"/><path transform="translate(1090,0)" d="M0,0 H40 L141,104 V0 H175 V150 H135 L34,46 V150 H0 Z" fill-rule="evenodd"/><path transform="translate(1293,0)" d="M0,0 H40 L141,104 V0 H175 V150 H135 L34,46 V150 H0 Z" fill-rule="evenodd"/></g></svg></a>
     <nav class="hdr-nav" aria-label="Main navigation">
       <a href="en.html#gamme">Range</a>
       <a href="en-max-edition-tool-trolley.html">Max Edition</a>
