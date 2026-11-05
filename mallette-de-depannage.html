@@ -463,6 +463,8 @@ a:hover .arrow,button:hover .arrow{transform:translateX(4px)}
 .chip input:focus-visible+span{outline:2px solid var(--beacon);outline-offset:2px}
 .form-foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;margin-top:28px}
 .form-foot p{max-width:46ch;font-size:13px;line-height:1.5;color:var(--alu-dim)}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.send-err{margin:0 0 14px;padding:12px 14px;box-shadow:inset 2px 0 0 var(--beacon);background:rgba(228,52,63,.08);font-size:14.5px;line-height:1.5}
 .done{display:grid;gap:18px}
 .done:focus{outline:none}
 .done h3{font:600 24px/1.1 var(--f-display);text-transform:uppercase}
@@ -829,7 +831,7 @@ dialog.legal::backdrop{background:rgba(4,9,14,.72);-webkit-backdrop-filter:blur(
     <div><h3>Éditeur</h3><p>BRUMANN SAS, société par actions simplifiée au capital de 46 000 €. Aérodrome Paris-Saclay Versailles, 78117 Toussus-le-Noble. RCS Orléans B 910 346 600 · SIRET 910 346 600 00018 · TVA FR59910346600. Contact : contact@brumann.fr.</p></div>
     <div><h3>Directeur de la publication</h3><p>À compléter.</p></div>
     <div><h3>Hébergement</h3><p>À compléter lors de la mise en ligne.</p></div>
-    <div><h3>Données personnelles</h3><p>Les informations transmises par le formulaire servent uniquement à répondre à votre demande. Vous pouvez demander leur consultation, leur rectification ou leur suppression à contact@brumann.fr.</p></div>
+    <div><h3>Données personnelles</h3><p>Les informations transmises par le formulaire servent uniquement à répondre à votre demande. Elles sont acheminées par le prestataire d’envoi de formulaires Web3Forms puis reçues par Brumann, et conservées le temps nécessaire au suivi de la demande. Vous pouvez demander leur consultation, leur rectification ou leur suppression à contact@brumann.fr.</p></div>
     <div><h3>Photographies</h3><p>Photographies Brumann, non contractuelles.</p></div>
   </div>
 </dialog>
