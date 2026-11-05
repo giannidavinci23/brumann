@@ -490,6 +490,19 @@ dialog.legal::backdrop{background:rgba(4,9,14,.72);-webkit-backdrop-filter:blur(
 .legal-in p{font-size:15px;line-height:1.6;color:var(--alu)}
 
 /* ---------- Adaptatif ---------- */
+/* Bureau : la servante à gauche, le texte à droite (la photo est retournée pour que l'avion reste derrière la servante) */
+@media (min-width:981px){
+  .hero-grid{grid-template-columns:minmax(0,7fr) minmax(0,5fr);align-items:center;padding-top:clamp(28px,3.5vw,52px)}
+  .hv{order:-1;justify-self:start}
+  .hero-copy{padding-top:0}
+  .hero-head{padding-top:0}
+  .hero h1{margin-top:18px;font-size:clamp(38px,4.5vw,76px)}
+  .hero .lead{margin-top:28px}
+  .hero-photo,.hero-video{scale:-1 1}
+  .hero-bg::before{background:
+    linear-gradient(270deg,rgba(11,21,32,.95) 0%,rgba(11,21,32,.8) 34%,rgba(11,21,32,.36) 66%,rgba(11,21,32,.52) 100%),
+    linear-gradient(180deg,rgba(11,21,32,.85) 0%,rgba(11,21,32,0) 26%,rgba(11,21,32,0) 56%,var(--night) 90%)}
+}
 @media (max-width:1180px){
   .hdr-nav,.hdr-cta{display:none}
   .lang{margin-left:auto}
@@ -632,6 +645,12 @@ html body .dl-hq text{stroke:#EAF2F9}
 .hero-video{display:none}
 .at-tag{color:#EEF2F5}
 .at-tag .price{color:#EEF2F5}
+
+@media (min-width:981px){
+  .hero-bg::before{background:
+    linear-gradient(270deg,rgba(255,255,255,.7) 0%,rgba(255,255,255,.5) 34%,rgba(255,255,255,.12) 56%,rgba(255,255,255,0) 68%),
+    linear-gradient(180deg,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 55%,var(--night) 84%)}
+}
 </style>
 <style id="mobile-center">
 /* Téléphone uniquement : contenu centré (le bureau et la tablette ne changent pas) */
@@ -1013,12 +1032,12 @@ html body .hero-photo~*{text-align:center}
   </div>
   <div class="wrap">
     <div class="hero-meta"><span data-i18n="hero.m1">LFPN · Toussus-le-Noble Aerodrome</span><span>48°45′N · 002°06′E</span><span data-i18n="hero.m3">Edition 26/27</span></div>
-    <div class="hero-head">
-      <p class="eyebrow" data-i18n="hero.eyebrow">Tool trolleys and professional tools</p>
-      <h1 id="hero-title" data-i18n="hero.h1"><span>Airfield-born.</span><span>Workshop-ready.</span></h1>
-    </div>
     <div class="hero-grid">
       <div class="hero-copy">
+      <div class="hero-head">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Tool trolleys and professional tools</p>
+        <h1 id="hero-title" data-i18n="hero.h1"><span>Airfield-born.</span><span>Workshop-ready.</span></h1>
+      </div>
         <p class="lead" data-i18n="hero.lead">Brumann designs tool trolleys, workshop furniture and professional tools for motorsport, aviation and demanding workshops. From <span class="nowrap">Toussus-le-Noble</span> aerodrome, near Paris.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#max-edition" data-i18n="hero.cta">Discover the Max Edition</a>

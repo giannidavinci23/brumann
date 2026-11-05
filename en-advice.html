@@ -505,6 +505,19 @@ dialog.legal::backdrop{background:rgba(4,9,14,.72);-webkit-backdrop-filter:blur(
 .legal-in p{font-size:15px;line-height:1.6;color:var(--alu)}
 
 /* ---------- Adaptatif ---------- */
+/* Bureau : la servante à gauche, le texte à droite (la photo est retournée pour que l'avion reste derrière la servante) */
+@media (min-width:981px){
+  .hero-grid{grid-template-columns:minmax(0,7fr) minmax(0,5fr);align-items:center;padding-top:clamp(28px,3.5vw,52px)}
+  .hv{order:-1;justify-self:start}
+  .hero-copy{padding-top:0}
+  .hero-head{padding-top:0}
+  .hero h1{margin-top:18px;font-size:clamp(38px,4.5vw,76px)}
+  .hero .lead{margin-top:28px}
+  .hero-photo,.hero-video{scale:-1 1}
+  .hero-bg::before{background:
+    linear-gradient(270deg,rgba(11,21,32,.95) 0%,rgba(11,21,32,.8) 34%,rgba(11,21,32,.36) 66%,rgba(11,21,32,.52) 100%),
+    linear-gradient(180deg,rgba(11,21,32,.85) 0%,rgba(11,21,32,0) 26%,rgba(11,21,32,0) 56%,var(--night) 90%)}
+}
 @media (max-width:1180px){
   .hdr-nav,.hdr-cta{display:none}
   .lang{margin-left:auto}
@@ -737,6 +750,12 @@ html body .dl-hq text{stroke:#EAF2F9}
 .hero-video{display:none}
 .at-tag{color:#EEF2F5}
 .at-tag .price{color:#EEF2F5}
+
+@media (min-width:981px){
+  .hero-bg::before{background:
+    linear-gradient(270deg,rgba(255,255,255,.7) 0%,rgba(255,255,255,.5) 34%,rgba(255,255,255,.12) 56%,rgba(255,255,255,0) 68%),
+    linear-gradient(180deg,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 55%,var(--night) 84%)}
+}
 
 .pp-hero{background:radial-gradient(ellipse 55% 50% at 30% 42%,#FFFFFF,transparent 70%),var(--night)}
 .pp-cta{background:var(--night-2)}
