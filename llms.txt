@@ -20,6 +20,14 @@
 - [Mobilier d’atelier](https://giannidavinci23.github.io/brumann/mobilier-atelier.html) : compositions de 1 250 à 1 550 € TTC, livrées sans outils.
 - [Personnalisation](https://giannidavinci23.github.io/brumann/#sur-mesure) : jeux de clés, trousses, boîtes à outils et modules de tiroirs aux couleurs d’un distributeur, sur étude.
 
+## Conseils
+
+- [Comment choisir une servante d’atelier](https://giannidavinci23.github.io/brumann/conseil-choisir-servante-atelier.html) : Usage, tiroirs, verrouillage, roues, finition, budget : les critères pour choisir une servante d’atelier, avec une check-list avant achat.
+- [Couple de serrage en aéronautique et en compétition : bien utiliser une clé dynamométrique](https://giannidavinci23.github.io/brumann/conseil-cle-dynamometrique-aeronautique-competition.html) : Couple de serrage en aéronautique et en compétition : choisir sa clé dynamométrique, la plage, le geste, la séquence de serrage, l’étalonnage et le rangement.
+- [Quels outils dans une mallette de dépannage ?](https://giannidavinci23.github.io/brumann/conseil-outils-mallette-depannage.html) : Douilles, tournevis, pinces, mesure, consommables : la liste des outils à prévoir dans une mallette de dépannage, et comment l’organiser.
+
+- [Advice (English)](https://giannidavinci23.github.io/brumann/en-advice.html) : [How to choose a workshop tool trolley](https://giannidavinci23.github.io/brumann/en-advice-choosing-tool-trolley.html) ; [Torque in aviation and motorsport: using a torque wrench properly](https://giannidavinci23.github.io/brumann/en-advice-torque-wrench-aviation-motorsport.html) ; [What tools belong in a service case?](https://giannidavinci23.github.io/brumann/en-advice-service-case-tools.html)
+
 ## Questions fréquentes
 
 ### Qu’est-ce que Brumann ?
