@@ -714,6 +714,32 @@ html body .dl-hq text{stroke:#EAF2F9}
 .pp-cta{background:var(--night-2)}
 .pp-vis .pp-tag{color:#4A5A6A}
 </style>
+<style id="mobile-center">
+/* Téléphone uniquement : contenu centré (le bureau et la tablette ne changent pas) */
+@media (max-width:720px){
+html body :is(.eyebrow,.h2,.lead,.sec-head,.sec-head>*,.hero-txt,.hero-copy,.maison,.maison>*,.inv>*,.dist>*,.custom>*,.max>*,.torque>*){text-align:center}
+html body :is(.eyebrow){display:flex;justify-content:center}
+html body :is(.lead,.hero p,.sec-head p,.maison p){margin-left:auto;margin-right:auto}
+html body :is(.hero-cta,.cta,.btns,.btn-row,.hero-actions,.pp-cta,.pp-actions){justify-content:center}
+html body :is(main,section,.hero,form,.pp,article) .btn{width:100%;max-width:420px}
+html body :is(.hero,.sec-head) .btn{margin-left:auto;margin-right:auto}
+html body :is(.hero-cta,.cta,.btns,.btn-row,.hero-actions,.pp-cta,.pp-actions){display:flex;flex-direction:column;align-items:center;gap:12px}
+html body :is(.rcard h3,.rcard p,.rcard .price,.rcard-txt){text-align:center}
+html body :is(.finish-row,.pp-finish,.finishes){justify-content:center}
+html body :is(.foot,footer) :is(*){text-align:center}
+html body :is(.foot,footer) :is(ul,.foot-links,.foot-cols){justify-items:center;justify-content:center}
+html body :is(.pp-info,.pp-head,.pp-intro,.art-head,.art h1,.pp h1,.pp-lead){text-align:center}
+html body .pp-breadcrumb,html body .crumbs{text-align:center;justify-content:center}
+html body :is(h1,h2,h3,h4,section>p,.hero p,header p){text-align:center}
+html body :is(form,.cf,.dealers,.faq,details,table,.check,.checklist,.spec-list,.pp-spec,.kv) :is(h1,h2,h3,h4,p){text-align:left}
+html body :is(.hero,.hero-in,.hero-grid)>*{text-align:center}
+html body :is(.hero,.hero-in) .eyebrow{justify-content:center}
+html body :is(main,section,.hero,form,.pp,article) .btn{display:flex;margin-left:auto;margin-right:auto}
+html body header .btn,html body .btn-sm{width:auto;max-width:none}
+html body .hero :is(p,h1,.lead,.hero-sub){text-align:center;margin-left:auto;margin-right:auto}
+html body .hero-photo~*{text-align:center}
+}
+</style>
 <script>
 (function () {
   var root = document.documentElement, st = document.getElementById('theme-jour');
@@ -888,7 +914,7 @@ html body .dl-hq text{stroke:#EAF2F9}
   </div>
   <nav aria-label="Mobile navigation">
     <a href="en.html#gamme">Range <small>4 families</small></a>
-    <a href="en-max-edition-tool-trolley.html">Max Edition <small>276 tools</small></a>
+    <a href="en-max-edition-tool-trolley.html">Max Edition <small>261 tools</small></a>
     <a href="en-workshop-furniture.html">Workshop <small>Furniture</small></a>
     <a href="en.html#intervention">Field kits <small>Case · Minibox</small></a>
     <a href="en.html#sur-mesure">Custom <small>Your colours</small></a>
@@ -949,7 +975,7 @@ html body .dl-hq text{stroke:#EAF2F9}
   <div class="wrap">
     <div class="rail"><span>The rest of the range</span><span>2026 retail prices incl. VAT</span></div>
     <div class="sec-head"><h2 class="h2" id="others-title">The full Brumann range.</h2></div>
-    <div class="range r3"><a class="rcard ticks torch" href="en-max-edition-tool-trolley.html"><div class="rcard-vis"><img src="img/cart_red.webp" width="792" height="872" alt="Max Edition trolley" loading="lazy"></div><div class="rcard-body"><h3>Max Edition trolley</h3><p>276 tools · 8 drawers · 3 finishes</p><div class="rcard-foot"><span class="price">€899 incl. VAT</span><span class="arrow" aria-hidden="true">→</span></div></div></a><a class="rcard ticks torch" href="en-workshop-furniture.html"><div class="rcard-vis"><img class="cover" src="img/atelier_red.webp" width="1536" height="1024" alt="Max Workshop furniture" loading="lazy"></div><div class="rcard-body"><h3>Max Workshop furniture</h3><p>Cabinets, trolleys and workbench</p><div class="rcard-foot"><span class="price">From €1,250 incl. VAT</span><span class="arrow" aria-hidden="true">→</span></div></div></a><a class="rcard ticks torch" href="en-service-tool-case.html"><div class="rcard-vis"><img src="img/trolley_open.webp" width="1003" height="1500" alt="Max Rescue service case" loading="lazy"></div><div class="rcard-body"><h3>Max Rescue service case</h3><p>110 tools · wheeled trolley case</p><div class="rcard-foot"><span class="price">€199 incl. VAT</span><span class="arrow" aria-hidden="true">→</span></div></div></a></div>
+    <div class="range r3"><a class="rcard ticks torch" href="en-max-edition-tool-trolley.html"><div class="rcard-vis"><img src="img/cart_red.webp" width="792" height="872" alt="Max Edition trolley" loading="lazy"></div><div class="rcard-body"><h3>Max Edition trolley</h3><p>261 tools · 8 drawers · 3 finishes</p><div class="rcard-foot"><span class="price">€899 incl. VAT</span><span class="arrow" aria-hidden="true">→</span></div></div></a><a class="rcard ticks torch" href="en-workshop-furniture.html"><div class="rcard-vis"><img class="cover" src="img/atelier_red.webp" width="1536" height="1024" alt="Max Workshop furniture" loading="lazy"></div><div class="rcard-body"><h3>Max Workshop furniture</h3><p>Cabinets, trolleys and workbench</p><div class="rcard-foot"><span class="price">From €1,250 incl. VAT</span><span class="arrow" aria-hidden="true">→</span></div></div></a><a class="rcard ticks torch" href="en-service-tool-case.html"><div class="rcard-vis"><img src="img/trolley_open.webp" width="1003" height="1500" alt="Max Rescue service case" loading="lazy"></div><div class="rcard-body"><h3>Max Rescue service case</h3><p>110 tools · wheeled trolley case</p><div class="rcard-foot"><span class="price">€199 incl. VAT</span><span class="arrow" aria-hidden="true">→</span></div></div></a></div>
   </div>
 </section>
 <section class="pp-cta" aria-labelledby="cta-title">

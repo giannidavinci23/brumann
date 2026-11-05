@@ -714,6 +714,32 @@ html body .dl-hq text{stroke:#EAF2F9}
 .pp-cta{background:var(--night-2)}
 .pp-vis .pp-tag{color:#4A5A6A}
 </style>
+<style id="mobile-center">
+/* Téléphone uniquement : contenu centré (le bureau et la tablette ne changent pas) */
+@media (max-width:720px){
+html body :is(.eyebrow,.h2,.lead,.sec-head,.sec-head>*,.hero-txt,.hero-copy,.maison,.maison>*,.inv>*,.dist>*,.custom>*,.max>*,.torque>*){text-align:center}
+html body :is(.eyebrow){display:flex;justify-content:center}
+html body :is(.lead,.hero p,.sec-head p,.maison p){margin-left:auto;margin-right:auto}
+html body :is(.hero-cta,.cta,.btns,.btn-row,.hero-actions,.pp-cta,.pp-actions){justify-content:center}
+html body :is(main,section,.hero,form,.pp,article) .btn{width:100%;max-width:420px}
+html body :is(.hero,.sec-head) .btn{margin-left:auto;margin-right:auto}
+html body :is(.hero-cta,.cta,.btns,.btn-row,.hero-actions,.pp-cta,.pp-actions){display:flex;flex-direction:column;align-items:center;gap:12px}
+html body :is(.rcard h3,.rcard p,.rcard .price,.rcard-txt){text-align:center}
+html body :is(.finish-row,.pp-finish,.finishes){justify-content:center}
+html body :is(.foot,footer) :is(*){text-align:center}
+html body :is(.foot,footer) :is(ul,.foot-links,.foot-cols){justify-items:center;justify-content:center}
+html body :is(.pp-info,.pp-head,.pp-intro,.art-head,.art h1,.pp h1,.pp-lead){text-align:center}
+html body .pp-breadcrumb,html body .crumbs{text-align:center;justify-content:center}
+html body :is(h1,h2,h3,h4,section>p,.hero p,header p){text-align:center}
+html body :is(form,.cf,.dealers,.faq,details,table,.check,.checklist,.spec-list,.pp-spec,.kv) :is(h1,h2,h3,h4,p){text-align:left}
+html body :is(.hero,.hero-in,.hero-grid)>*{text-align:center}
+html body :is(.hero,.hero-in) .eyebrow{justify-content:center}
+html body :is(main,section,.hero,form,.pp,article) .btn{display:flex;margin-left:auto;margin-right:auto}
+html body header .btn,html body .btn-sm{width:auto;max-width:none}
+html body .hero :is(p,h1,.lead,.hero-sub){text-align:center;margin-left:auto;margin-right:auto}
+html body .hero-photo~*{text-align:center}
+}
+</style>
 <script>
 (function () {
   var root = document.documentElement, st = document.getElementById('theme-jour');
@@ -888,7 +914,7 @@ html body .dl-hq text{stroke:#EAF2F9}
   </div>
   <nav aria-label="Navigation mobile">
     <a href="./#gamme">Gamme <small>4 familles</small></a>
-    <a href="servante-max-edition.html">Max Édition <small>276 outils</small></a>
+    <a href="servante-max-edition.html">Max Édition <small>261 outils</small></a>
     <a href="mobilier-atelier.html">Atelier <small>Mobilier</small></a>
     <a href="./#intervention">Intervention <small>Mallette · Minibox</small></a>
     <a href="./#sur-mesure">Sur mesure <small>À vos couleurs</small></a>
@@ -953,7 +979,7 @@ html body .dl-hq text{stroke:#EAF2F9}
   <div class="wrap">
     <div class="rail"><span>Le reste de la gamme</span><span>Prix publics TTC 2026</span></div>
     <div class="sec-head"><h2 class="h2" id="others-title">Toute la gamme Brumann.</h2></div>
-    <div class="range r3"><a class="rcard ticks torch" href="servante-max-edition.html"><div class="rcard-vis"><img src="img/cart_red.webp" width="792" height="872" alt="Servante Max Édition" loading="lazy"></div><div class="rcard-body"><h3>Servante Max Édition</h3><p>276 outils · 8 tiroirs · 3 finitions</p><div class="rcard-foot"><span class="price">899&nbsp;€ TTC</span><span class="arrow" aria-hidden="true">→</span></div></div></a><a class="rcard ticks torch" href="mobilier-atelier.html"><div class="rcard-vis"><img class="cover" src="img/atelier_red.webp" width="1536" height="1024" alt="Mobilier d’atelier Max Workshop" loading="lazy"></div><div class="rcard-body"><h3>Mobilier d’atelier Max Workshop</h3><p>Armoires, servantes et plan de travail</p><div class="rcard-foot"><span class="price">Dès 1&nbsp;250&nbsp;€ TTC</span><span class="arrow" aria-hidden="true">→</span></div></div></a><a class="rcard ticks torch" href="minibox-3-tiroirs.html"><div class="rcard-vis"><img src="img/minibox_open.webp" width="1034" height="1330" alt="Minibox Max Titan" loading="lazy"></div><div class="rcard-body"><h3>Minibox Max Titan</h3><p>83 outils · caisse métallique</p><div class="rcard-foot"><span class="price">350&nbsp;€ TTC</span><span class="arrow" aria-hidden="true">→</span></div></div></a></div>
+    <div class="range r3"><a class="rcard ticks torch" href="servante-max-edition.html"><div class="rcard-vis"><img src="img/cart_red.webp" width="792" height="872" alt="Servante Max Édition" loading="lazy"></div><div class="rcard-body"><h3>Servante Max Édition</h3><p>261 outils · 8 tiroirs · 3 finitions</p><div class="rcard-foot"><span class="price">899&nbsp;€ TTC</span><span class="arrow" aria-hidden="true">→</span></div></div></a><a class="rcard ticks torch" href="mobilier-atelier.html"><div class="rcard-vis"><img class="cover" src="img/atelier_red.webp" width="1536" height="1024" alt="Mobilier d’atelier Max Workshop" loading="lazy"></div><div class="rcard-body"><h3>Mobilier d’atelier Max Workshop</h3><p>Armoires, servantes et plan de travail</p><div class="rcard-foot"><span class="price">Dès 1&nbsp;250&nbsp;€ TTC</span><span class="arrow" aria-hidden="true">→</span></div></div></a><a class="rcard ticks torch" href="minibox-3-tiroirs.html"><div class="rcard-vis"><img src="img/minibox_open.webp" width="1034" height="1330" alt="Minibox Max Titan" loading="lazy"></div><div class="rcard-body"><h3>Minibox Max Titan</h3><p>83 outils · caisse métallique</p><div class="rcard-foot"><span class="price">350&nbsp;€ TTC</span><span class="arrow" aria-hidden="true">→</span></div></div></a></div>
   </div>
 </section>
 <section class="pp-cta" aria-labelledby="cta-title">

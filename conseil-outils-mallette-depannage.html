@@ -744,6 +744,32 @@ html body .dl-hq text{stroke:#EAF2F9}
 .pp-cta{background:var(--night-2)}
 .pp-vis .pp-tag{color:#4A5A6A}
 </style>
+<style id="mobile-center">
+/* Téléphone uniquement : contenu centré (le bureau et la tablette ne changent pas) */
+@media (max-width:720px){
+html body :is(.eyebrow,.h2,.lead,.sec-head,.sec-head>*,.hero-txt,.hero-copy,.maison,.maison>*,.inv>*,.dist>*,.custom>*,.max>*,.torque>*){text-align:center}
+html body :is(.eyebrow){display:flex;justify-content:center}
+html body :is(.lead,.hero p,.sec-head p,.maison p){margin-left:auto;margin-right:auto}
+html body :is(.hero-cta,.cta,.btns,.btn-row,.hero-actions,.pp-cta,.pp-actions){justify-content:center}
+html body :is(main,section,.hero,form,.pp,article) .btn{width:100%;max-width:420px}
+html body :is(.hero,.sec-head) .btn{margin-left:auto;margin-right:auto}
+html body :is(.hero-cta,.cta,.btns,.btn-row,.hero-actions,.pp-cta,.pp-actions){display:flex;flex-direction:column;align-items:center;gap:12px}
+html body :is(.rcard h3,.rcard p,.rcard .price,.rcard-txt){text-align:center}
+html body :is(.finish-row,.pp-finish,.finishes){justify-content:center}
+html body :is(.foot,footer) :is(*){text-align:center}
+html body :is(.foot,footer) :is(ul,.foot-links,.foot-cols){justify-items:center;justify-content:center}
+html body :is(.pp-info,.pp-head,.pp-intro,.art-head,.art h1,.pp h1,.pp-lead){text-align:center}
+html body .pp-breadcrumb,html body .crumbs{text-align:center;justify-content:center}
+html body :is(h1,h2,h3,h4,section>p,.hero p,header p){text-align:center}
+html body :is(form,.cf,.dealers,.faq,details,table,.check,.checklist,.spec-list,.pp-spec,.kv) :is(h1,h2,h3,h4,p){text-align:left}
+html body :is(.hero,.hero-in,.hero-grid)>*{text-align:center}
+html body :is(.hero,.hero-in) .eyebrow{justify-content:center}
+html body :is(main,section,.hero,form,.pp,article) .btn{display:flex;margin-left:auto;margin-right:auto}
+html body header .btn,html body .btn-sm{width:auto;max-width:none}
+html body .hero :is(p,h1,.lead,.hero-sub){text-align:center;margin-left:auto;margin-right:auto}
+html body .hero-photo~*{text-align:center}
+}
+</style>
 <script>
 (function () {
   var root = document.documentElement, st = document.getElementById('theme-jour');
@@ -872,7 +898,7 @@ html body .dl-hq text{stroke:#EAF2F9}
   </div>
   <nav aria-label="Navigation mobile">
     <a href="./#gamme">Gamme <small>4 familles</small></a>
-    <a href="servante-max-edition.html">Max Édition <small>276 outils</small></a>
+    <a href="servante-max-edition.html">Max Édition <small>261 outils</small></a>
     <a href="mobilier-atelier.html">Atelier <small>Mobilier</small></a>
     <a href="./#intervention">Intervention <small>Mallette · Minibox</small></a>
     <a href="./#sur-mesure">Sur mesure <small>À vos couleurs</small></a>
@@ -925,7 +951,7 @@ html body .dl-hq text{stroke:#EAF2F9}
 <h2>Poids et mobilité</h2>
 <p>Un kit complet que l’on n’emporte pas ne dépanne personne. La <a href="mallette-de-depannage.html">mallette de dépannage</a> est un trolley léger sur roues de 13 kg (28 × 51 × 26 cm) qui emporte 110 outils et plus de 300 accessoires, ce qui facilite les trajets sur sols plats et dans les parkings. La <a href="minibox-3-tiroirs.html">Minibox</a> est une caisse métallique de 22 kg (36 × 56 × 32 cm) à trois tiroirs, avec 83 outils, un verrouillage centralisé et des tiroirs auto-bloquants.</p>
 <h2>Mallette, Minibox ou servante ?</h2>
-<ul><li><span><a href="mallette-de-depannage.html">Mallette de dépannage</a> (199 € TTC) : légère, sur roues, pour se déplacer souvent.</span></li><li><span><a href="minibox-3-tiroirs.html">Minibox</a> (350 € TTC) : caisse métallique à tiroirs verrouillables, pour un véhicule ou un petit local.</span></li><li><span><a href="servante-max-edition.html">Max Édition</a> (899 € TTC) : 276 outils et 8 tiroirs, pour l’atelier où l’on travaille tous les jours.</span></li></ul>
+<ul><li><span><a href="mallette-de-depannage.html">Mallette de dépannage</a> (199 € TTC) : légère, sur roues, pour se déplacer souvent.</span></li><li><span><a href="minibox-3-tiroirs.html">Minibox</a> (350 € TTC) : caisse métallique à tiroirs verrouillables, pour un véhicule ou un petit local.</span></li><li><span><a href="servante-max-edition.html">Max Édition</a> (899 € TTC) : 261 outils et 8 tiroirs, pour l’atelier où l’on travaille tous les jours.</span></li></ul>
 <h2>Métrique, pouces : regardez vos machines</h2>
 <p>Selon les machines que vous dépannez, les fixations sont métriques, en pouces, ou un mélange des deux. Relevez les dimensions de clés et de douilles qui reviennent réellement avant de composer la mallette, et vérifiez que le jeu proposé couvre vos tailles. Un jeu complet mais mal adapté laissera la même impression qu’un jeu incomplet.</p>
 <h2>Trois exemples de composition</h2>
@@ -948,7 +974,7 @@ html body .dl-hq text{stroke:#EAF2F9}
   <div class="wrap">
     <div class="rail"><span>Produits cités</span><span>Prix publics TTC 2026</span></div>
     <div class="sec-head"><h2 class="h2" id="prod-title">Les produits dont on parle.</h2></div>
-    <div class="range r3"><a class="rcard ticks torch" href="mallette-de-depannage.html"><div class="rcard-vis"><img src="img/trolley_open.webp" width="1003" height="1500" alt="Mallette de dépannage Max Rescue" loading="lazy"></div><div class="rcard-body"><h3>Mallette de dépannage Max Rescue</h3><p>110 outils · trolley sur roues</p><div class="rcard-foot"><span class="price">199&nbsp;€ TTC</span><span class="arrow" aria-hidden="true">→</span></div></div></a><a class="rcard ticks torch" href="minibox-3-tiroirs.html"><div class="rcard-vis"><img src="img/minibox_open.webp" width="1034" height="1330" alt="Minibox Max Titan" loading="lazy"></div><div class="rcard-body"><h3>Minibox Max Titan</h3><p>83 outils · caisse métallique</p><div class="rcard-foot"><span class="price">350&nbsp;€ TTC</span><span class="arrow" aria-hidden="true">→</span></div></div></a><a class="rcard ticks torch" href="servante-max-edition.html"><div class="rcard-vis"><img src="img/cart_red.webp" width="792" height="872" alt="Servante Max Édition" loading="lazy"></div><div class="rcard-body"><h3>Servante Max Édition</h3><p>276 outils · 8 tiroirs · 3 finitions</p><div class="rcard-foot"><span class="price">899&nbsp;€ TTC</span><span class="arrow" aria-hidden="true">→</span></div></div></a></div>
+    <div class="range r3"><a class="rcard ticks torch" href="mallette-de-depannage.html"><div class="rcard-vis"><img src="img/trolley_open.webp" width="1003" height="1500" alt="Mallette de dépannage Max Rescue" loading="lazy"></div><div class="rcard-body"><h3>Mallette de dépannage Max Rescue</h3><p>110 outils · trolley sur roues</p><div class="rcard-foot"><span class="price">199&nbsp;€ TTC</span><span class="arrow" aria-hidden="true">→</span></div></div></a><a class="rcard ticks torch" href="minibox-3-tiroirs.html"><div class="rcard-vis"><img src="img/minibox_open.webp" width="1034" height="1330" alt="Minibox Max Titan" loading="lazy"></div><div class="rcard-body"><h3>Minibox Max Titan</h3><p>83 outils · caisse métallique</p><div class="rcard-foot"><span class="price">350&nbsp;€ TTC</span><span class="arrow" aria-hidden="true">→</span></div></div></a><a class="rcard ticks torch" href="servante-max-edition.html"><div class="rcard-vis"><img src="img/cart_red.webp" width="792" height="872" alt="Servante Max Édition" loading="lazy"></div><div class="rcard-body"><h3>Servante Max Édition</h3><p>261 outils · 8 tiroirs · 3 finitions</p><div class="rcard-foot"><span class="price">899&nbsp;€ TTC</span><span class="arrow" aria-hidden="true">→</span></div></div></a></div>
   </div>
 </section>
 <section class="sec" aria-labelledby="more-title">
