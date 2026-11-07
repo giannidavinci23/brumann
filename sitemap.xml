@@ -126,4 +126,32 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://brumann.fr/en-advice-service-case-tools.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://brumann.fr/conseil-outils-mallette-depannage.html"/>
   </url>
+  <url>
+    <loc>https://brumann.fr/servantes-atelier-professionnelles.html</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brumann.fr/servantes-atelier-professionnelles.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brumann.fr/en-professional-tool-trolleys.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brumann.fr/servantes-atelier-professionnelles.html"/>
+  </url>
+  <url>
+    <loc>https://brumann.fr/en-professional-tool-trolleys.html</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brumann.fr/servantes-atelier-professionnelles.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brumann.fr/en-professional-tool-trolleys.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brumann.fr/servantes-atelier-professionnelles.html"/>
+  </url>
+  <url>
+    <loc>https://brumann.fr/outillage-personnalise-distributeurs.html</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brumann.fr/outillage-personnalise-distributeurs.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brumann.fr/en-custom-branded-tools-distributors.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brumann.fr/outillage-personnalise-distributeurs.html"/>
+  </url>
+  <url>
+    <loc>https://brumann.fr/en-custom-branded-tools-distributors.html</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brumann.fr/outillage-personnalise-distributeurs.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brumann.fr/en-custom-branded-tools-distributors.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brumann.fr/outillage-personnalise-distributeurs.html"/>
+  </url>
 </urlset>
