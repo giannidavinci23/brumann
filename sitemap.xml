@@ -154,4 +154,18 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://brumann.fr/en-custom-branded-tools-distributors.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://brumann.fr/outillage-personnalise-distributeurs.html"/>
   </url>
+  <url>
+    <loc>https://brumann.fr/fournisseur-outillage-professionnel.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brumann.fr/fournisseur-outillage-professionnel.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brumann.fr/en-professional-tools-supplier.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brumann.fr/fournisseur-outillage-professionnel.html"/>
+  </url>
+  <url>
+    <loc>https://brumann.fr/en-professional-tools-supplier.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://brumann.fr/fournisseur-outillage-professionnel.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://brumann.fr/en-professional-tools-supplier.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://brumann.fr/fournisseur-outillage-professionnel.html"/>
+  </url>
 </urlset>
